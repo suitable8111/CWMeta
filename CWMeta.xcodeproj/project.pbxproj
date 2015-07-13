@@ -33,6 +33,7 @@
 		038DE9441B415A8D00C8C741 /* CWMetaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038DE9431B415A8D00C8C741 /* CWMetaTests.swift */; };
 		038DE94E1B422FD500C8C741 /* 20150630_cwmeta.json in Resources */ = {isa = PBXBuildFile; fileRef = 038DE94D1B422FD500C8C741 /* 20150630_cwmeta.json */; };
 		038DE9501B42436000C8C741 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038DE94F1B42436000C8C741 /* DataModel.swift */; };
+		03C37A831B4E7A49007B0EE0 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C37A821B4E7A49007B0EE0 /* InfoViewController.swift */; };
 		03ECD2B81B42ACCF000A6AAF /* wordpress-db..xml in Resources */ = {isa = PBXBuildFile; fileRef = 03ECD2B71B42ACCF000A6AAF /* wordpress-db..xml */; };
 		03EF25D01B4B904C0078D472 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF25CF1B4B904C0078D472 /* TableViewController.swift */; };
 		03EF25D21B4BB3E60078D472 /* myFavorite.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03EF25D11B4BB3E60078D472 /* myFavorite.plist */; };
@@ -82,6 +83,7 @@
 		038DE9431B415A8D00C8C741 /* CWMetaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWMetaTests.swift; sourceTree = "<group>"; };
 		038DE94D1B422FD500C8C741 /* 20150630_cwmeta.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 20150630_cwmeta.json; sourceTree = "<group>"; };
 		038DE94F1B42436000C8C741 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		03C37A821B4E7A49007B0EE0 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		03ECD2B71B42ACCF000A6AAF /* wordpress-db..xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "wordpress-db..xml"; sourceTree = "<group>"; };
 		03EF25CF1B4B904C0078D472 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		03EF25D11B4BB3E60078D472 /* myFavorite.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = myFavorite.plist; path = ../myFavorite.plist; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				03EF25D51B4BD6F40078D472 /* FavorDetailViewController.swift */,
 				038DE94F1B42436000C8C741 /* DataModel.swift */,
 				038DE9311B415A8D00C8C741 /* Main.storyboard */,
+				03C37A821B4E7A49007B0EE0 /* InfoViewController.swift */,
 				038DE9341B415A8D00C8C741 /* Images.xcassets */,
 				038DE9361B415A8D00C8C741 /* LaunchScreen.xib */,
 				038DE92B1B415A8D00C8C741 /* Supporting Files */,
@@ -315,6 +318,7 @@
 				038DE92E1B415A8D00C8C741 /* AppDelegate.swift in Sources */,
 				038DE9501B42436000C8C741 /* DataModel.swift in Sources */,
 				03EF25D01B4B904C0078D472 /* TableViewController.swift in Sources */,
+				03C37A831B4E7A49007B0EE0 /* InfoViewController.swift in Sources */,
 				0335B7AA1B44DF7100D55EEC /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

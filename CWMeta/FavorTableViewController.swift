@@ -26,6 +26,7 @@ class FavorTableViewController : UIViewController, UITableViewDelegate, UITableV
         favorArray = NSMutableArray(contentsOfFile: path)
         tbView.delegate = self
         tbView.dataSource = self
+        tbView.reloadData()
         tbView.rowHeight = 70;
         
     }
@@ -69,6 +70,8 @@ class FavorTableViewController : UIViewController, UITableViewDelegate, UITableV
         if(segue.identifier == "goFavorDetail"){
             var fdvControl = segue.destinationViewController as! FavorDetailViewController
             fdvControl.dataDic = favorArray.objectAtIndex(tbView.indexPathForSelectedRow()!.row) as! NSDictionary
+            fdvControl.favorArray = favorArray
+            fdvControl.indexPathRow = tbView.indexPathForSelectedRow()!.row
         }
     }
     

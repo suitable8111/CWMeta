@@ -8,11 +8,18 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 
     var dataModel : DataModel!
     var cagoDataArray : NSMutableArray!
-    var checkNum : Int = 1
+    var transforming = true
+    var rotating = true
+    
+    @IBOutlet weak var aniImageView4: UIView!
+    @IBOutlet weak var aniImageView3: UIView!
+    @IBOutlet weak var aniImageView2: UIView!
+    @IBOutlet weak var aniImageView: UIView!
     
     @IBOutlet weak var exhibitBtn: UIButton!
     @IBOutlet weak var eventBtn: UIButton!
@@ -32,6 +39,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.hidden = true
+        rotateOnce()
+        
         UIView.animateWithDuration(1.3, delay: 0.5, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.5, options: nil, animations: {
             self.favorBtn.transform = CGAffineTransformMakeTranslation(0,-120)
             self.marketBtn.transform = CGAffineTransformMakeTranslation(110,-55)
@@ -40,6 +49,7 @@ class ViewController: UIViewController {
             self.allBtn.transform = CGAffineTransformMakeTranslation(-110,55)
             self.infoBtn.transform = CGAffineTransformMakeTranslation(-110,-55)
         }, completion: nil)
+        
         self.modelData()
         dataModel.beginParsing()
         cagoDataArray = NSMutableArray()
@@ -100,7 +110,7 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func actMenuBtn(sender: AnyObject) {
-        if(checkNum % 2 == 0){
+        if(transforming  == false){
             UIView.animateWithDuration(1.3, delay: 0.0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.5, options: nil, animations: {
                 self.favorBtn.transform = CGAffineTransformMakeTranslation(0,-120)
                 self.marketBtn.transform = CGAffineTransformMakeTranslation(110,-55)
@@ -109,6 +119,7 @@ class ViewController: UIViewController {
                 self.allBtn.transform = CGAffineTransformMakeTranslation(-110,55)
                 self.infoBtn.transform = CGAffineTransformMakeTranslation(-110,-55)
             }, completion: nil)
+            transforming = true
         }else{
             UIView.animateWithDuration(1.3, delay: 0.0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.5, options: nil, animations: {
                 self.favorBtn.transform = CGAffineTransformMakeTranslation(0,0)
@@ -118,8 +129,25 @@ class ViewController: UIViewController {
                 self.allBtn.transform = CGAffineTransformMakeTranslation(0,0)
                 self.infoBtn.transform = CGAffineTransformMakeTranslation(0,0)
                 }, completion: nil)
+            transforming = false
         }
-        checkNum = checkNum+1
+    }
+    func rotateOnce() {
+        UIView.animateWithDuration(1.0, delay: 0.0, options: .CurveLinear, animations: {
+                self.aniImageView.transform = CGAffineTransformRotate(self.aniImageView.transform, 3.1415926*0.25)
+                self.aniImageView2.transform = CGAffineTransformRotate(self.aniImageView2.transform, 3.1415926*0.25)
+                self.aniImageView3.transform = CGAffineTransformRotate(self.aniImageView3.transform, 3.1415926*0.25)
+                self.aniImageView4.transform = CGAffineTransformRotate(self.aniImageView4.transform, 3.1415926*0.25)
+            }, completion: {finished in self.rotateAgain()})
+    }
+    
+    func rotateAgain() {
+        UIView.animateWithDuration(1.0, delay: 0.0, options: .CurveLinear, animations: {
+            self.aniImageView.transform = CGAffineTransformRotate(self.aniImageView.transform, -3.1415926*0.25)
+            self.aniImageView2.transform = CGAffineTransformRotate(self.aniImageView2.transform, -3.1415926*0.25)
+            self.aniImageView3.transform = CGAffineTransformRotate(self.aniImageView3.transform, -3.1415926*0.25)
+            self.aniImageView4.transform = CGAffineTransformRotate(self.aniImageView4.transform, -3.1415926*0.25)
+            },completion: {finished in if self.rotating { self.rotateOnce() }})
     }
 
     
