@@ -16,15 +16,21 @@ class TableViewController : UIViewController, UITableViewDataSource, UITableView
     @IBOutlet weak var bgImage: UIImageView!
     @IBOutlet weak var naviBarImage: UIImageView!
     @IBOutlet weak var backBtn: UIButton!
+    @IBOutlet weak var titleLabel: UILabel!
+    
     override func viewWillAppear(animated: Bool) {
         if(currentState == "goAll"){
             bgImage.image = UIImage(named: "allbg.png")
+            titleLabel.text = "모두보기"
         }else if(currentState == "goMarket"){
             bgImage.image = UIImage(named: "marketbg.png")
+            titleLabel.text = "마켓&행사"
         }else if(currentState == "goExhibit"){
             bgImage.image = UIImage(named: "exhibitBg.png")
+            titleLabel.text = "전시"
         }else if(currentState == "goEvent"){
             bgImage.image = UIImage(named: "eventBg.png")
+            titleLabel.text = "공연"
         }
     }
     override func viewDidLoad() {
@@ -32,6 +38,21 @@ class TableViewController : UIViewController, UITableViewDataSource, UITableView
         tbView.dataSource = self
         tbView.delegate = self
         tbView.rowHeight = 70
+        let frameForHeight : CGFloat = view.frame.size.height/667
+        let frameForWidth : CGFloat = view.frame.size.width/375
+        if(frameForHeight != 1){
+            bgImage.frame.origin = CGPoint(x: bgImage.frame.origin.x * frameForWidth, y: bgImage.frame.origin.y * frameForHeight)
+            naviBarImage.frame.origin = CGPoint(x: naviBarImage.frame.origin.x * frameForWidth, y: naviBarImage.frame.origin.y * frameForHeight)
+            backBtn.frame.origin = CGPoint(x: backBtn.frame.origin.x * frameForWidth, y: backBtn.frame.origin.y * frameForHeight)
+            titleLabel.frame.origin = CGPoint(x: titleLabel.frame.origin.x * frameForWidth, y: titleLabel.frame.origin.y * frameForHeight)
+            tbView.frame.origin = CGPoint(x: tbView.frame.origin.x * frameForWidth, y: tbView.frame.origin.y * frameForHeight)
+            
+            bgImage.frame.size = CGSizeMake(bgImage.frame.width * frameForWidth,  bgImage.frame.height * frameForHeight)
+            naviBarImage.frame.size = CGSizeMake(naviBarImage.frame.width * frameForWidth,  naviBarImage.frame.height * frameForHeight)
+            backBtn.frame.size = CGSizeMake(backBtn.frame.width * frameForWidth,  backBtn.frame.height * frameForHeight)
+            titleLabel.frame.size = CGSizeMake(titleLabel.frame.width * frameForWidth,  titleLabel.frame.height * frameForHeight)
+            
+        }
         
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
