@@ -177,6 +177,8 @@ class FavorDetailViewController : UIViewController, UIScrollViewDelegate {
         labelsBg.layer.masksToBounds = true
         btnsBg.layer.cornerRadius = 5
         btnsBg.layer.masksToBounds = true
+        
+        makeMapView()
     }
     func getFileName(fileName:String) -> String {
         let docsDir = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)
@@ -184,7 +186,33 @@ class FavorDetailViewController : UIViewController, UIScrollViewDelegate {
         let fullName = docPath.stringByAppendingPathComponent(fileName)
         return fullName
     }
-    
+    func makeMapView() {
+        let x = dataDic.valueForKey("latitude") as? String
+        let y = dataDic.valueForKey("longtitude") as? String
+        if(x != nil){
+            
+            var location = CLLocationCoordinate2D()
+            
+            var xNSString = NSString(string: x!)
+            var xToDouble = xNSString.doubleValue
+            
+            var yNSString = NSString(string: y!)
+            var yToDouble = yNSString.doubleValue
+            
+            location.latitude = xToDouble
+            location.longitude = yToDouble
+            
+            let span = MKCoordinateSpanMake(0.01, 0.01)
+            let region = MKCoordinateRegion(center: location, span: span)
+            mapView.setRegion(region, animated: true)
+            
+            
+            let annotation = MKPointAnnotation()
+            annotation.coordinate = location
+            annotation.title = dataDic.valueForKey("place") as? String
+            mapView.addAnnotation(annotation)
+        }
+    }
     @IBAction func actPrevious(sender: AnyObject) {
         navigationController?.popViewControllerAnimated(true)
     }

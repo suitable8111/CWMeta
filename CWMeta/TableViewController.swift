@@ -63,7 +63,7 @@ class TableViewController : UIViewController, UITableViewDataSource, UITableView
         }
         let titleLabel = cell!.viewWithTag(101) as! UILabel
 
-        titleLabel.text = cagoAry.objectAtIndex(indexPath.row).valueForKey("title") as? String
+        titleLabel.text = cagoAry.objectAtIndex(cagoAry.count-indexPath.row-1).valueForKey("title") as? String
         
         if(indexPath.row % 2 == 1){
             cell?.backgroundColor = UIColor.whiteColor()
@@ -79,7 +79,7 @@ class TableViewController : UIViewController, UITableViewDataSource, UITableView
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if(segue.identifier == "goDetail"){
             var dvControl = segue.destinationViewController as! DetailViewController
-            dvControl.dataDic = cagoAry.objectAtIndex(tbView.indexPathForSelectedRow()!.row) as! NSDictionary
+            dvControl.dataDic = cagoAry.objectAtIndex(cagoAry.count-tbView.indexPathForSelectedRow()!.row-1) as! NSDictionary
         }
     }
     @IBAction func actPrevious(sender: AnyObject) {

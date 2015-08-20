@@ -13,23 +13,28 @@ class DataModel : NSObject, NSXMLParserDelegate {
     var posts = NSMutableArray()
     var element = NSString()
     var elements = NSMutableDictionary()
+    
     var title = NSMutableString()
     var content = NSMutableString()
     var thumbnail = NSMutableString()
-    var count : Int = 0
-    
-    
-    var option_key = NSMutableString()
-    var option_value = NSMutableString()
+    var name = NSMutableString()
+    var tel = NSMutableString()
+    var email = NSMutableString()
+    var place = NSMutableString()
+    var category = NSMutableString()
+    var price = NSMutableString()
+    var period = NSMutableString()
+    var startTime = NSMutableString()
+    var endTime = NSMutableString()
+    var latitude = NSMutableString()
+    var longtitude = NSMutableString()
     
     func beginParsing(){
         
         var stringURL : String = ""
-        stringURL = "http://52.68.142.137/xml/wordpress-db..xml"
+        stringURL = "http://52.68.142.137/xml/wordpressXml.php"
         
         var url = NSURL(string: stringURL)
-        
-//        let url = NSBundle.mainBundle().URLForResource("wordpress-db.", withExtension: "xml")
         
         parser = NSXMLParser(contentsOfURL: url)!
         parser.delegate = self
@@ -38,89 +43,118 @@ class DataModel : NSObject, NSXMLParserDelegate {
     func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [NSObject : AnyObject]) {
         element = elementName
         if(elementName as NSString).isEqualToString("row"){
-            
-            if(count % 10 == 0) {
-                elements = NSMutableDictionary.alloc()
-                elements = [:]
-            }
-            
+            elements = NSMutableDictionary.alloc()
+            elements = [:]
             title = NSMutableString.alloc()
             title = ""
             content = NSMutableString.alloc()
             content = ""
-            option_key = NSMutableString.alloc()
-            option_key = ""
-            option_value = NSMutableString.alloc()
-            option_value = ""
             thumbnail = NSMutableString.alloc()
             thumbnail = ""
-
-            
+            name = NSMutableString.alloc()
+            name = ""
+            tel = NSMutableString.alloc()
+            tel = ""
+            email = NSMutableString.alloc()
+            email = ""
+            place = NSMutableString.alloc()
+            place = ""
+            category = NSMutableString.alloc()
+            category = ""
+            price = NSMutableString.alloc()
+            price = ""
+            period = NSMutableString.alloc()
+            period = ""
+            startTime = NSMutableString.alloc()
+            startTime = ""
+            endTime = NSMutableString.alloc()
+            endTime = ""
+            latitude = NSMutableString.alloc()
+            latitude = ""
+            longtitude = NSMutableString.alloc()
+            longtitude = ""
         }
     }
-    func parser(parser: NSXMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?){
+    func parser(parser: NSXMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?)
+    {
         if (elementName as NSString).isEqualToString("row") {
-            
-            count = count + 1
-            
-            if (!title.isEqual(nil) && count%10 == 1 )  {
+            if !title.isEqual(nil) {
                 elements.setObject(title, forKey: "title")
             }
-            if (!content.isEqual(nil) && count%10 == 1) {
+            if !content.isEqual(nil) {
                 elements.setObject(content, forKey: "content")
             }
-            if (!content.isEqual(nil) && count%10 == 1) {
+            if !thumbnail.isEqual(nil) {
                 elements.setObject(thumbnail, forKey: "thumbnail_file")
             }
-            if option_key.isEqualToString("name\n\t\t\t\t" ){
-                elements.setObject(option_value, forKey: "name")
+            if !tel.isEqual(nil) {
+                elements.setObject(tel, forKey: "tel")
             }
-            if option_key.isEqualToString("category\n\t\t\t\t"){
-                elements.setObject(option_value, forKey: "category")
+            if !email.isEqual(nil) {
+                elements.setObject(email, forKey: "email")
             }
-            if option_key.isEqualToString("price\n\t\t\t\t"){
-                elements.setObject(option_value, forKey: "price")
+            if !place.isEqual(nil) {
+                elements.setObject(place, forKey: "place")
             }
-            if option_key.isEqualToString("period\n\t\t\t\t"){
-                elements.setObject(option_value, forKey: "period")
+            if !category.isEqual(nil) {
+                elements.setObject(category, forKey: "category")
             }
-            if option_key.isEqualToString("tel\n\t\t\t\t") {
-                elements.setObject(option_value, forKey: "tel")
+            if !price.isEqual(nil) {
+                elements.setObject(price, forKey: "price")
             }
-            if option_key.isEqualToString("email\n\t\t\t\t"){
-                elements.setObject(option_value, forKey: "email")
+            if !period.isEqual(nil) {
+                elements.setObject(period, forKey: "period")
             }
-            if option_key.isEqualToString("place\n\t\t\t\t"){
-                elements.setObject(option_value, forKey: "place")
+            if !startTime.isEqual(nil) {
+                elements.setObject(startTime, forKey: "startTime")
             }
-            if option_key.isEqualToString("startTime\n\t\t\t\t"){
-                elements.setObject(option_value, forKey: "startTime")
+            if !endTime.isEqual(nil) {
+                elements.setObject(endTime, forKey: "endTime")
             }
-            if option_key.isEqualToString("endTime\n\t\t\t\t"){
-                elements.setObject(option_value, forKey: "endTime")
+            if !latitude.isEqual(nil) {
+                elements.setObject(latitude, forKey: "latitude")
             }
-            
-            if(count % 10 == 9){
-                posts.addObject(elements)
-                count = count + 1
+            if !longtitude.isEqual(nil) {
+                elements.setObject(longtitude, forKey: "longtitude")
             }
+
+            posts.addObject(elements)
+        
+       
+        }
+        
+    }
+    func parser(parser: NSXMLParser, foundCharacters string: String?) {
+        if element.isEqualToString("title"){
+            title.appendString(replaceSpecialChar(string!))
+        }else if element.isEqualToString("content"){
+            content.appendString(replaceSpecialChar(string!))
+        }else if element.isEqualToString("thumbnail_file"){
+            thumbnail.appendString(replaceSpecialChar(string!))
+        }else if element.isEqualToString("name"){
+            name.appendString(replaceSpecialChar(string!))
+        }else if element.isEqualToString("tel"){
+            tel.appendString(replaceSpecialChar(string!))
+        }else if element.isEqualToString("email"){
+            email.appendString(replaceSpecialChar(string!))
+        }else if element.isEqualToString("place"){
+            place.appendString(replaceSpecialChar(string!))
+        }else if element.isEqualToString("category"){
+            category.appendString(replaceSpecialChar(string!))
+        }else if element.isEqualToString("price"){
+            price.appendString(replaceSpecialChar(string!))
+        }else if element.isEqualToString("period"){
+            period.appendString(replaceSpecialChar(string!))
+        }else if element.isEqualToString("startTime"){
+            startTime.appendString(replaceSpecialChar(string!))
+        }else if element.isEqualToString("endTime"){
+            endTime.appendString(replaceSpecialChar(string!))
+        }else if element.isEqualToString("longtitude"){
+            longtitude.appendString(replaceSpecialChar(string!))
+        }else if element.isEqualToString("latitude"){
+            latitude.appendString(replaceSpecialChar(string!))
         }
     }
-        func parser(parser: NSXMLParser, foundCharacters string: String?) {
-            
-            if element.isEqualToString("title"){
-                title.appendString(replaceSpecialChar(string!))
-            }else if element.isEqualToString("content"){
-                content.appendString(replaceSpecialChar(string!))
-            }else if element.isEqualToString("thumbnail_file"){
-                thumbnail.appendString(replaceSpecialChar(string!))
-            }else if element.isEqualToString("option_key"){
-                option_key.appendString(string!)
-            }else if element.isEqualToString("option_value"){
-                option_value.appendString(replaceSpecialChar(string!))
-                
-            }
-        }
     func replaceSpecialChar(str:String) -> String{
         var str_change = NSMutableString(string: str)
         

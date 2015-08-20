@@ -200,19 +200,53 @@ class DetailViewController : UIViewController, UIScrollViewDelegate {
         if isFavor {
             favorBtn.setImage(UIImage(named: "favor_heart_add.png"), forState: UIControlState.Normal)
         }
+        makeMapView()
     }
+    
     func getFileName(fileName:String) -> String {
         let docsDir = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)
         let docPath = docsDir[0] as! String
         let fullName = docPath.stringByAppendingPathComponent(fileName)
         return fullName
     }
-    
+    func makeMapView() {
+        let x = dataDic.valueForKey("latitude") as? String
+        let y = dataDic.valueForKey("longtitude") as? String
+        if(x != ""){
+            
+            var location = CLLocationCoordinate2D()
+            
+            var xNSString = NSString(string: x!)
+            var xToDouble = xNSString.doubleValue
+            
+            var yNSString = NSString(string: y!)
+            var yToDouble = yNSString.doubleValue
+            
+            location.latitude = xToDouble
+            location.longitude = yToDouble
+            
+            let span = MKCoordinateSpanMake(0.01, 0.01)
+            let region = MKCoordinateRegion(center: location, span: span)
+            mapView.setRegion(region, animated: true)
+            
+            
+            let annotation = MKPointAnnotation()
+            annotation.coordinate = location
+            annotation.title = dataDic.valueForKey("place") as? String
+            mapView.addAnnotation(annotation)
+        }
+    }
     @IBAction func acrPrevious(sender: AnyObject) {
         navigationController?.popViewControllerAnimated(true)
     }
     @IBAction func actFavorBtn(sender: AnyObject) {
-        //var isEqual = false
+        
+        for var num:Int = 0; num < favorArray.count; num = num + 1 {
+            if (favorArray.objectAtIndex(num).valueForKey("title") as! String == dataDic.valueForKey("title") as! String){
+                isFavor = true
+            }
+        }
+        
         if(favorArray.count == 0){
             path = getFileName("myFavorite.plist")
             favorArray.addObject(dataDic)
@@ -222,8 +256,13 @@ class DetailViewController : UIViewController, UIScrollViewDelegate {
             favorBtn.setImage(UIImage(named: "favor_heart_add.png"), forState: UIControlState.Normal)
         }else {
             if isFavor {
-                var alert = UIAlertView(title: "!?", message: "즐겨찾기에 추가된거에요", delegate: self, cancelButtonTitle: "확인")
+                favorArray.removeObjectAtIndex(favorArray.count-1)
+                let path = getFileName("myFavorite.plist")
+                favorArray.writeToFile(path, atomically: true)
+                var alert = UIAlertView(title: "즐겨찾기", message: "즐겨찾기 제거 되었습니다.", delegate: self, cancelButtonTitle: "확인")
                 alert.show()
+                favorBtn.setImage(UIImage(named: "Detail_FavorBtn.png"), forState: UIControlState.Normal)
+                isFavor = false
             }else {
                 path = getFileName("myFavorite.plist")
                 favorArray.addObject(dataDic)
@@ -270,8 +309,59 @@ class DetailViewController : UIViewController, UIScrollViewDelegate {
             }, completion: nil)
     }
     @IBAction func actKakaoStory(sender: AnyObject) {
+        KOSessionTask.storyIsStoryUserTaskWithCompletionHandler({(isUser : Bool, userError : NSError!) in
+            if userError != nil{
+                println("Suesses user login")
+                if self.dataDic.valueForKey("thumbnail_file") as? String != ""{
+                    let stringURL =  "http://52.68.142.137"+(self.dataDic.valueForKey("thumbnail_file") as? String)!
+                    let imageURL = NSURL(string: stringURL)
+                    let dataCashe = NSData(contentsOfURL: imageURL!)
+                    let thumImage = UIImage(data: dataCashe!)
+                    let imageAry = NSMutableArray()
+                    imageAry.removeAllObjects()
+                    imageAry.addObject(thumImage!)
+                    KOSessionTask.storyMultiImagesUploadTaskWithImages(imageAry as [AnyObject]!, completionHandler: {(imageUrl : [AnyObject]!, imageError : NSError!) in
+                                            if imageError != nil {
+                                                println("Suesses image")
+                                                let initText = "[문화 알림 소식]!! \n 제목 : " + self.titleLabel.text! + "\n 장소" + self.placeLabel.text! + "\n 시간 :" + self.startTimeLabel.text! + "~" + self.endTimeLabel.text!
+                                                KOSessionTask.storyPostPhotoTaskWithImageUrls(imageUrl, content: initText,
+                                                            permission: KOStoryPostPermission.Friend,
+                                                            sharable: true, androidExecParam: ["andParm1":"value1","andParam2":"value2"],
+                                                            iosExecParam: ["andParm1":"value1","andParam2":"value2"],
+                                                            completionHandler: {(post: KOStoryPostInfo! ,postError:NSError!) in if (postError != nil){
+                                                            println("Suesses image to post")
+                                                }else{
+                                                            println("Fail image to post")
+                                                }
+                                                })
+                                            }else {
+                                                println("Fail image")
+                                            }
+                        })
+                }else{
+                    let initText = "[문화 알림 소식]!! \n 제목 : " + self.titleLabel.text! + "\n 장소" + self.placeLabel.text! + "\n 시간 :" + self.startTimeLabel.text! + "~" + self.endTimeLabel.text!
+                    KOSessionTask.storyPostNoteTaskWithContent(initText,
+                                permission: KOStoryPostPermission.Friend,
+                                sharable: true,
+                                androidExecParam: ["andParm1":"value1","andParam2":"value2"],
+                                iosExecParam: ["andParm1":"value1","andParam2":"value2"],
+                                completionHandler: {(post: KOStoryPostInfo! ,
+                                                    postError:NSError!) in if (postError != nil){
+                                                        println("Suesses to post")
+                                                    }else{
+                                                        println("Fail to post")
+                                                    }
+                                })
+                }
+            }else{
+                println("fail user login")
+            }
+        })
         
+        
+       
     }
+    
     @IBAction func actTwitter(sender: AnyObject) {
         if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter){
             var twShare:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)

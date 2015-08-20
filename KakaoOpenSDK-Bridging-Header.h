@@ -12,6 +12,5 @@
 #import <KakaoOpenSDK/KOAppCall.h>
 #import <KakaoOpenSDK/KakaoTalkLinkAction.h>
 #import <KakaoOpenSDK/KakaoTalkLinkObject.h>
-
-
+#import <KakaoOpenSDK/KOSessionTask+StoryAPI.h>
 #endif

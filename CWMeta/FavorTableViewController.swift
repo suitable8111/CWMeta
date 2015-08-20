@@ -15,7 +15,10 @@ class FavorTableViewController : UIViewController, UITableViewDelegate, UITableV
     @IBOutlet weak var naviBarImage: UIImageView!
     @IBOutlet weak var backBtn: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
-    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
+        tbView.reloadData()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         let path = getFileName("myFavorite.plist")

@@ -33,6 +33,23 @@
 		0375D8D31B54A0F7007B8F5D /* Bg_MusicIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0375D8D11B54A0F7007B8F5D /* Bg_MusicIcon.png */; };
 		0375D8D41B54A0F7007B8F5D /* Bg_MusicIcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0375D8D21B54A0F7007B8F5D /* Bg_MusicIcon2.png */; };
 		0375D8D61B54A19E007B8F5D /* mainBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0375D8D51B54A19E007B8F5D /* mainBg.png */; };
+		038A8BFF1B85A32400254379 /* PARM.png in Resources */ = {isa = PBXBuildFile; fileRef = 038A8BFD1B85A32400254379 /* PARM.png */; };
+		038A8C051B85EAF000254379 /* Intro@1242x2208.png in Resources */ = {isa = PBXBuildFile; fileRef = 038A8C001B85EAF000254379 /* Intro@1242x2208.png */; };
+		038A8C061B85EAF000254379 /* Intro@750x1134.png in Resources */ = {isa = PBXBuildFile; fileRef = 038A8C011B85EAF000254379 /* Intro@750x1134.png */; };
+		038A8C071B85EAF000254379 /* Intro@640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = 038A8C021B85EAF000254379 /* Intro@640x960.png */; };
+		038A8C081B85EAF000254379 /* Intro@320x480.png in Resources */ = {isa = PBXBuildFile; fileRef = 038A8C031B85EAF000254379 /* Intro@320x480.png */; };
+		038A8C091B85EAF000254379 /* Intro@640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = 038A8C041B85EAF000254379 /* Intro@640x1136.png */; };
+		038A8C181B860C2200254379 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 038A8C161B860C2200254379 /* info.png */; };
+		038A8C191B860C2200254379 /* info_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 038A8C171B860C2200254379 /* info_button.png */; };
+		038A8C271B86103800254379 /* HowToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038A8C261B86103800254379 /* HowToViewController.swift */; };
+		038A8C291B86104500254379 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038A8C281B86104500254379 /* HomePageViewController.swift */; };
+		038A8C2B1B86126700254379 /* info2-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 038A8C2A1B86126700254379 /* info2-1.png */; };
+		038A8C321B86349300254379 /* icon@58.png in Resources */ = {isa = PBXBuildFile; fileRef = 038A8C2C1B86349300254379 /* icon@58.png */; };
+		038A8C331B86349300254379 /* icon@80.png in Resources */ = {isa = PBXBuildFile; fileRef = 038A8C2D1B86349300254379 /* icon@80.png */; };
+		038A8C341B86349300254379 /* icon@87.png in Resources */ = {isa = PBXBuildFile; fileRef = 038A8C2E1B86349300254379 /* icon@87.png */; };
+		038A8C351B86349300254379 /* icon@120.png in Resources */ = {isa = PBXBuildFile; fileRef = 038A8C2F1B86349300254379 /* icon@120.png */; };
+		038A8C361B86349300254379 /* icon@180.png in Resources */ = {isa = PBXBuildFile; fileRef = 038A8C301B86349300254379 /* icon@180.png */; };
+		038A8C371B86349300254379 /* icon@512.png in Resources */ = {isa = PBXBuildFile; fileRef = 038A8C311B86349300254379 /* icon@512.png */; };
 		038DE92E1B415A8D00C8C741 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038DE92D1B415A8D00C8C741 /* AppDelegate.swift */; };
 		038DE9301B415A8D00C8C741 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038DE92F1B415A8D00C8C741 /* ViewController.swift */; };
 		038DE9331B415A8D00C8C741 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 038DE9311B415A8D00C8C741 /* Main.storyboard */; };
@@ -89,6 +106,23 @@
 		0375D8D11B54A0F7007B8F5D /* Bg_MusicIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bg_MusicIcon.png; sourceTree = "<group>"; };
 		0375D8D21B54A0F7007B8F5D /* Bg_MusicIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bg_MusicIcon2.png; sourceTree = "<group>"; };
 		0375D8D51B54A19E007B8F5D /* mainBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainBg.png; sourceTree = "<group>"; };
+		038A8BFD1B85A32400254379 /* PARM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PARM.png; sourceTree = "<group>"; };
+		038A8C001B85EAF000254379 /* Intro@1242x2208.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Intro@1242x2208.png"; sourceTree = "<group>"; };
+		038A8C011B85EAF000254379 /* Intro@750x1134.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Intro@750x1134.png"; sourceTree = "<group>"; };
+		038A8C021B85EAF000254379 /* Intro@640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Intro@640x960.png"; sourceTree = "<group>"; };
+		038A8C031B85EAF000254379 /* Intro@320x480.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Intro@320x480.png"; sourceTree = "<group>"; };
+		038A8C041B85EAF000254379 /* Intro@640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Intro@640x1136.png"; sourceTree = "<group>"; };
+		038A8C161B860C2200254379 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
+		038A8C171B860C2200254379 /* info_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info_button.png; sourceTree = "<group>"; };
+		038A8C261B86103800254379 /* HowToViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowToViewController.swift; sourceTree = "<group>"; };
+		038A8C281B86104500254379 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		038A8C2A1B86126700254379 /* info2-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info2-1.png"; sourceTree = "<group>"; };
+		038A8C2C1B86349300254379 /* icon@58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@58.png"; sourceTree = "<group>"; };
+		038A8C2D1B86349300254379 /* icon@80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@80.png"; sourceTree = "<group>"; };
+		038A8C2E1B86349300254379 /* icon@87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@87.png"; sourceTree = "<group>"; };
+		038A8C2F1B86349300254379 /* icon@120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@120.png"; sourceTree = "<group>"; };
+		038A8C301B86349300254379 /* icon@180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@180.png"; sourceTree = "<group>"; };
+		038A8C311B86349300254379 /* icon@512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@512.png"; sourceTree = "<group>"; };
 		038DE9281B415A8D00C8C741 /* CWMeta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CWMeta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		038DE92C1B415A8D00C8C741 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		038DE92D1B415A8D00C8C741 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -161,8 +195,10 @@
 				03EF25D51B4BD6F40078D472 /* FavorDetailViewController.swift */,
 				038DE94F1B42436000C8C741 /* DataModel.swift */,
 				038DE9311B415A8D00C8C741 /* Main.storyboard */,
-				03F15BC61B56656400ABA251 /* IntroViewController.swift */,
+				038A8C261B86103800254379 /* HowToViewController.swift */,
+				038A8C281B86104500254379 /* HomePageViewController.swift */,
 				03C37A821B4E7A49007B0EE0 /* InfoViewController.swift */,
+				03F15BC61B56656400ABA251 /* IntroViewController.swift */,
 				038DE9341B415A8D00C8C741 /* Images.xcassets */,
 				038DE9361B415A8D00C8C741 /* LaunchScreen.xib */,
 				038DE92B1B415A8D00C8C741 /* Supporting Files */,
@@ -173,8 +209,12 @@
 		038DE92B1B415A8D00C8C741 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				038A8BFD1B85A32400254379 /* PARM.png */,
 				034106D21B4CEC41004F88E2 /* allBtn.png */,
 				034106DE1B4CFAE8004F88E2 /* backBtnImg.png */,
+				038A8C2A1B86126700254379 /* info2-1.png */,
+				038A8C161B860C2200254379 /* info.png */,
+				038A8C171B860C2200254379 /* info_button.png */,
 				034106D41B4CF94A004F88E2 /* allbg.png */,
 				03F15BC21B562EB900ABA251 /* ShareBtn.png */,
 				034106D51B4CF94A004F88E2 /* eventBg.png */,
@@ -184,6 +224,17 @@
 				035F5C041B54C781003EBC01 /* KakaoLinkIcon.png */,
 				035F5C051B54C781003EBC01 /* KakaoStoryIcon.png */,
 				035F5C061B54C781003EBC01 /* TwitterIcon.png */,
+				038A8C001B85EAF000254379 /* Intro@1242x2208.png */,
+				038A8C011B85EAF000254379 /* Intro@750x1134.png */,
+				038A8C2C1B86349300254379 /* icon@58.png */,
+				038A8C2D1B86349300254379 /* icon@80.png */,
+				038A8C2E1B86349300254379 /* icon@87.png */,
+				038A8C2F1B86349300254379 /* icon@120.png */,
+				038A8C301B86349300254379 /* icon@180.png */,
+				038A8C311B86349300254379 /* icon@512.png */,
+				038A8C021B85EAF000254379 /* Intro@640x960.png */,
+				038A8C031B85EAF000254379 /* Intro@320x480.png */,
+				038A8C041B85EAF000254379 /* Intro@640x1136.png */,
 				035F5C001B54C28E003EBC01 /* Select_Bar.png */,
 				03F15BBE1B56130200ABA251 /* HomePage_icon.png */,
 				03F15BBF1B56130200ABA251 /* phoneCall_icon.png */,
@@ -273,6 +324,7 @@
 				TargetAttributes = {
 					038DE9271B415A8D00C8C741 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 3739DSQ64T;
 					};
 					038DE93C1B415A8D00C8C741 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -305,36 +357,51 @@
 			buildActionMask = 2147483647;
 			files = (
 				0375D8D41B54A0F7007B8F5D /* Bg_MusicIcon2.png in Resources */,
+				038A8C081B85EAF000254379 /* Intro@320x480.png in Resources */,
 				034106D01B4CEBF8004F88E2 /* marketBtn.png in Resources */,
 				035F5C091B54C781003EBC01 /* KakaoLinkIcon.png in Resources */,
 				03F15BC11B56130200ABA251 /* phoneCall_icon.png in Resources */,
 				038DE9331B415A8D00C8C741 /* Main.storyboard in Resources */,
 				035F5C011B54C28E003EBC01 /* Select_Bar.png in Resources */,
+				038A8C181B860C2200254379 /* info.png in Resources */,
+				038A8C061B85EAF000254379 /* Intro@750x1134.png in Resources */,
 				034106CE1B4CEBF8004F88E2 /* Intro.png in Resources */,
 				034106DD1B4CF94A004F88E2 /* marketbg.png in Resources */,
 				034106CD1B4CEBF8004F88E2 /* infoBtn.png in Resources */,
 				034106DA1B4CF94A004F88E2 /* eventBg.png in Resources */,
 				034106D11B4CEBF8004F88E2 /* menuBtn.png in Resources */,
+				038A8C321B86349300254379 /* icon@58.png in Resources */,
+				038A8C2B1B86126700254379 /* info2-1.png in Resources */,
 				035F5C071B54C781003EBC01 /* Detail_FavorBtn.png in Resources */,
 				03F15BC51B563C0D00ABA251 /* favor_heart_add.png in Resources */,
 				034106CB1B4CEBF8004F88E2 /* exhibitBtn.png in Resources */,
+				038A8C361B86349300254379 /* icon@180.png in Resources */,
+				038A8C051B85EAF000254379 /* Intro@1242x2208.png in Resources */,
 				034106DC1B4CF94A004F88E2 /* favorbg.png in Resources */,
 				0375D8D61B54A19E007B8F5D /* mainBg.png in Resources */,
 				0375D8D31B54A0F7007B8F5D /* Bg_MusicIcon.png in Resources */,
 				035F5C0A1B54C781003EBC01 /* KakaoStoryIcon.png in Resources */,
 				034106DF1B4CFAE8004F88E2 /* backBtnImg.png in Resources */,
 				038DE9381B415A8D00C8C741 /* LaunchScreen.xib in Resources */,
+				038A8C341B86349300254379 /* icon@87.png in Resources */,
+				038A8C331B86349300254379 /* icon@80.png in Resources */,
+				038A8BFF1B85A32400254379 /* PARM.png in Resources */,
+				038A8C191B860C2200254379 /* info_button.png in Resources */,
 				035F5C0B1B54C781003EBC01 /* TwitterIcon.png in Resources */,
 				03F15BC31B562EB900ABA251 /* ShareBtn.png in Resources */,
+				038A8C091B85EAF000254379 /* Intro@640x1136.png in Resources */,
 				034106DB1B4CF94A004F88E2 /* exhibitBg.png in Resources */,
 				034106D31B4CEC41004F88E2 /* allBtn.png in Resources */,
 				035F5C081B54C781003EBC01 /* FaceBookIcon.png in Resources */,
 				03EF25D21B4BB3E60078D472 /* myFavorite.plist in Resources */,
 				03F15BC01B56130200ABA251 /* HomePage_icon.png in Resources */,
+				038A8C071B85EAF000254379 /* Intro@640x960.png in Resources */,
+				038A8C351B86349300254379 /* icon@120.png in Resources */,
 				034106E11B4CFAF8004F88E2 /* naviBarImg.png in Resources */,
 				038DE9351B415A8D00C8C741 /* Images.xcassets in Resources */,
 				034106CC1B4CEBF8004F88E2 /* favorBtn.png in Resources */,
 				034106D91B4CF94A004F88E2 /* allbg.png in Resources */,
+				038A8C371B86349300254379 /* icon@512.png in Resources */,
 				034106CA1B4CEBF8004F88E2 /* eventBtn.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,8 +424,10 @@
 				03EF25D41B4BB7580078D472 /* FavorTableViewController.swift in Sources */,
 				03EF25D61B4BD6F40078D472 /* FavorDetailViewController.swift in Sources */,
 				038DE9301B415A8D00C8C741 /* ViewController.swift in Sources */,
+				038A8C271B86103800254379 /* HowToViewController.swift in Sources */,
 				038DE92E1B415A8D00C8C741 /* AppDelegate.swift in Sources */,
 				038DE9501B42436000C8C741 /* DataModel.swift in Sources */,
+				038A8C291B86104500254379 /* HomePageViewController.swift in Sources */,
 				03EF25D01B4B904C0078D472 /* TableViewController.swift in Sources */,
 				03C37A831B4E7A49007B0EE0 /* InfoViewController.swift in Sources */,
 				0335B7AA1B44DF7100D55EEC /* DetailViewController.swift in Sources */,
@@ -490,18 +559,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mun Design Solution Inc. (3739DSQ64T)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mun Design Solution Inc. (3739DSQ64T)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = CWMeta/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "KakaoOpenSDK-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -509,18 +584,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mun Design Solution Inc. (3739DSQ64T)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mun Design Solution Inc. (3739DSQ64T)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = CWMeta/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "KakaoOpenSDK-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
