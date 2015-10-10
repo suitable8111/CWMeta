@@ -1,375 +1,415 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="tuI-RY-cgk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="6kS-Be-DCs">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
         <!--Detail View Controller-->
-        <scene sceneID="Ojj-Ab-rGp">
+        <scene sceneID="WLX-Jg-jEi">
             <objects>
-                <viewController id="Xlw-Bx-LZp" customClass="DetailViewController" customModule="CWMeta" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="6HX-6d-waQ">
+                <viewController id="AKc-As-1My" customClass="DetailViewController" customModule="CWMeta" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U9n-3A-9BQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsVerticalScrollIndicator="NO" id="LkB-bc-imo" userLabel="ScrollView">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsVerticalScrollIndicator="NO" id="uAC-gB-iSM" userLabel="ScrollView">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Yhh-zn-Zcf" userLabel="Labels_Bg">
+                                    <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="zK1-zJ-XxC" userLabel="Labels_Bg">
                                         <rect key="frame" x="5" y="330" width="365" height="255"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="JJZ-gw-avl" userLabel="Btns_Bg">
+                                    <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Jvc-Uf-2en" userLabel="Btns_Bg">
                                         <rect key="frame" x="5" y="593" width="365" height="66"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주최" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CYm-sP-lgr" userLabel="NameLabel">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주최" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Wf1-s7-j3y" userLabel="NameLabel">
                                         <rect key="frame" x="97" y="549" width="250" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="장소" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="erZ-Xp-0d7" userLabel="PlaceLabel">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="장소" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="c5D-qZ-ZJg" userLabel="PlaceLabel">
                                         <rect key="frame" x="97" y="358" width="250" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시간" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="v6p-cO-jnG" userLabel="StartTimeLabel">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시간" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wNY-vk-VL9" userLabel="StartTimeLabel">
                                         <rect key="frame" x="97" y="386" width="93" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="~" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="C5R-bz-eRh" userLabel="GabTimeLabel">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="~" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Tqi-hr-GJ4" userLabel="GabTimeLabel">
                                         <rect key="frame" x="197" y="386" width="19" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="요금" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hhb-Eg-yr0" userLabel="PeriodLabel">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="요금" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KBC-KZ-sE4" userLabel="PeriodLabel">
                                         <rect key="frame" x="97" y="416" width="150" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시간" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PSC-rv-jrO" userLabel="EndTimeLabel">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시간" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Nrc-97-DK2" userLabel="EndTimeLabel">
                                         <rect key="frame" x="243" y="386" width="117" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="dd" id="DgL-Sx-ANH" userLabel="ContentLabel">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="dd" id="TZs-TP-rF6" userLabel="ContentLabel">
                                         <rect key="frame" x="91" y="444" width="248" height="92"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="장소" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jXQ-kC-o9l" userLabel="sPlaceLabel">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="장소" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="knx-KW-mt8" userLabel="sPlaceLabel">
                                         <rect key="frame" x="29" y="358" width="60" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <color key="textColor" red="0.20000000000000001" green="0.33725490196078434" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.33725490200000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시간" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1UV-A6-oV3" userLabel="sTimeLabel">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시간" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="M8A-qX-LV9" userLabel="sTimeLabel">
                                         <rect key="frame" x="29" y="386" width="60" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <color key="textColor" red="0.20000000000000001" green="0.33725490196078434" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.33725490200000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주최" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5V7-gV-xBL" userLabel="sNameLabel">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주최" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DI4-7O-GJl" userLabel="sNameLabel">
                                         <rect key="frame" x="29" y="549" width="60" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <color key="textColor" red="0.20000000000000001" green="0.33725490196078434" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.33725490200000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내용" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3N2-py-Q7N" userLabel="sContentLabel">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내용" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="290-yA-liZ" userLabel="sContentLabel">
                                         <rect key="frame" x="29" y="452" width="60" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <color key="textColor" red="0.20000000000000001" green="0.33725490196078434" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.33725490200000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="요금" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Kwp-sK-PaR" userLabel="sPeriodLabel">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="요금" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="srk-1Z-L0U" userLabel="sPeriodLabel">
                                         <rect key="frame" x="29" y="416" width="60" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <color key="textColor" red="0.20000000000000001" green="0.33725490196078434" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.33725490200000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="GJm-L7-Ytl" userLabel="MapView">
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="9cX-6g-5Nq" userLabel="MapView">
                                         <rect key="frame" x="380" y="335" width="365" height="250"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                     </mapView>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="VQy-ta-Kkj" userLabel="SegumentStyle">
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="mfk-Ar-Sak" userLabel="SegumentStyle">
                                         <rect key="frame" x="425" y="600" width="275" height="29"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <segments>
                                             <segment title="지도"/>
                                             <segment title="위성"/>
                                             <segment title="지도+위성"/>
                                         </segments>
                                         <connections>
-                                            <action selector="actMapStyle:" destination="Xlw-Bx-LZp" eventType="valueChanged" id="2Ir-la-6si"/>
+                                            <action selector="actMapStyle:" destination="AKc-As-1My" eventType="valueChanged" id="736-O9-yDV"/>
                                         </connections>
                                     </segmentedControl>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="51w-hG-DiN" userLabel="FavorBtn">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3cD-Tv-ay3" userLabel="FavorBtn">
                                         <rect key="frame" x="272" y="608" width="25" height="25"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <state key="normal" image="Detail_FavorBtn.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="actFavorBtn:" destination="Xlw-Bx-LZp" eventType="touchUpInside" id="RpM-23-AxM"/>
+                                            <action selector="actFavorBtn:" destination="AKc-As-1My" eventType="touchUpInside" id="1pj-af-KVN"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wRI-eB-Jdi" userLabel="ShareBtn">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cfy-p5-J3b" userLabel="ShareBtn">
                                         <rect key="frame" x="74" y="608" width="25" height="25"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <state key="normal" image="ShareBtn.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="actShare:" destination="Xlw-Bx-LZp" eventType="touchUpInside" id="gez-7i-iE8"/>
+                                            <action selector="actShare:" destination="AKc-As-1My" eventType="touchUpInside" id="G1H-Hn-sn4"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FIB-aE-K3T" userLabel="PhoneBtn">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xuh-Ja-GZa" userLabel="PhoneBtn">
                                         <rect key="frame" x="172" y="605" width="27" height="27"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <state key="normal" image="phoneCall_icon.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="actPhoneCall:" destination="Xlw-Bx-LZp" eventType="touchUpInside" id="jBZ-9X-fve"/>
+                                            <action selector="actPhoneCall:" destination="AKc-As-1My" eventType="touchUpInside" id="OiY-jU-FJv"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="공유하기" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="d6L-Ku-Yge" userLabel="sShareLabel">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="공유하기" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tSh-Md-cfI" userLabel="sShareLabel">
                                         <rect key="frame" x="60" y="635" width="52" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                         <color key="textColor" red="0.20000000000000001" green="0.33725490200000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="전화하기" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Qhr-qi-N95" userLabel="sCallLabel">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="전화하기" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5iH-1T-0dN" userLabel="sCallLabel">
                                         <rect key="frame" x="159" y="635" width="52" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                         <color key="textColor" red="0.20000000000000001" green="0.33725490200000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="즐겨찾기" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="i94-LF-5Zg" userLabel="sFavorLabel">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="즐겨찾기" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sDa-h1-vfg" userLabel="sFavorLabel">
                                         <rect key="frame" x="258" y="635" width="52" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                         <color key="textColor" red="0.20000000000000001" green="0.33725490200000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </scrollView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="naviBarImg.png" id="7hw-KI-OdD" userLabel="NaviBar">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="naviBarImg.png" id="gF1-Ov-ieo" userLabel="NaviBar">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tPx-MH-Q40" userLabel="backBtn">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IFx-O2-v4t" userLabel="backBtn">
                                 <rect key="frame" x="0.0" y="12" width="44" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="&lt;">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="acrPrevious:" destination="Xlw-Bx-LZp" eventType="touchUpInside" id="Quj-Ey-SZb"/>
+                                    <action selector="acrPrevious:" destination="AKc-As-1My" eventType="touchUpInside" id="Pz7-Be-LHG"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="제목" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2Kr-hj-Ohx" userLabel="NaviTitleLabel">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="제목" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ja1-61-3Qb" userLabel="NaviTitleLabel">
                                 <rect key="frame" x="86" y="21" width="200" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="OV4-I5-9mR" userLabel="ThumnailImage">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="xyl-3U-BNe" userLabel="ThumnailImage">
                                 <rect key="frame" x="0.0" y="60" width="375" height="219"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="설명" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QUE-jh-kUR" userLabel="ExplainLabel">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지도" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TDR-dV-dka" userLabel="MapLabel">
+                                <rect key="frame" x="188" y="278" width="187" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.54399671049999998" green="0.66124236089999999" blue="0.41802014799999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" red="0.20000000000000001" green="0.52411242670000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="설명" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="acR-km-45U" userLabel="ExplainLabel">
                                 <rect key="frame" x="0.0" y="278" width="188" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.33725490200000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지도" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Yvj-OH-j6r" userLabel="MapLabel">
-                                <rect key="frame" x="188" y="278" width="187" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.54399671052631571" green="0.66124236089999999" blue="0.41802014802631576" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="highlightedColor" red="0.20000000000000001" green="0.52411242667105262" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Select_Bar.png" id="WLI-Rw-6lm" userLabel="SelectedImage">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Select_Bar.png" id="9lK-zO-zzs" userLabel="SelectedImage">
                                 <rect key="frame" x="0.0" y="315" width="188" height="10"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                             </imageView>
-                            <view alpha="0.0" contentMode="scaleToFill" id="EK6-wM-rbA" userLabel="HiddenView">
+                            <view alpha="0.0" contentMode="scaleToFill" id="LyI-O9-kP4" userLabel="HiddenView">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mEw-OM-ZnA" userLabel="ShareBackBtn">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YTX-cL-XhU" userLabel="ShareBackBtn">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <state key="normal">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="actShareBack:" destination="Xlw-Bx-LZp" eventType="touchUpInside" id="7g3-Tm-hZQ"/>
+                                            <action selector="actShareBack:" destination="AKc-As-1My" eventType="touchUpInside" id="6Qf-ld-yVj"/>
                                         </connections>
                                     </button>
                                 </subviews>
+                                <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleToFill" id="qha-Fa-y1A" userLabel="ShareView">
-                                <rect key="frame" x="15" y="668" width="345" height="120"/>
+                            <view contentMode="scaleToFill" id="Ij4-9O-n5X" userLabel="ShareView">
+                                <rect key="frame" x="15" y="667" width="345" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ihx-U0-Fed" userLabel="KaKaoLink">
-                                        <rect key="frame" x="107" y="32" width="41" height="41"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="C8q-5M-bQ9" userLabel="KaKaoLink">
+                                        <rect key="frame" x="111" y="32" width="41" height="41"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <state key="normal" image="KakaoLinkIcon.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="actKakaoLink:" destination="Xlw-Bx-LZp" eventType="touchUpInside" id="tC3-xD-yUL"/>
+                                            <action selector="actKakaoLink:" destination="AKc-As-1My" eventType="touchUpInside" id="U5N-az-9oH"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xWP-kV-52m" userLabel="KakaoStory">
-                                        <rect key="frame" x="36" y="32" width="41" height="41"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gBL-9r-x9v" userLabel="FaceBook">
+                                        <rect key="frame" x="270" y="32" width="41" height="41"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="KakaoStoryIcon.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="actKakaoStory:" destination="Xlw-Bx-LZp" eventType="touchUpInside" id="9Sl-TT-Rru"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xQ9-cD-BXL" userLabel="FaceBook">
-                                        <rect key="frame" x="257" y="32" width="41" height="41"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <state key="normal" image="FaceBookIcon.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="actFaceBook:" destination="Xlw-Bx-LZp" eventType="touchUpInside" id="cG8-wS-n42"/>
+                                            <action selector="actFaceBook:" destination="AKc-As-1My" eventType="touchUpInside" id="PYZ-Wo-lyt"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="taa-K7-Daz" userLabel="Twitter">
-                                        <rect key="frame" x="181" y="32" width="41" height="41"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vGl-RI-D6r" userLabel="Twitter">
+                                        <rect key="frame" x="193" y="32" width="41" height="41"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <state key="normal" image="TwitterIcon.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="actTwitter:" destination="Xlw-Bx-LZp" eventType="touchUpInside" id="NkI-HU-qOy"/>
+                                            <action selector="actTwitter:" destination="AKc-As-1My" eventType="touchUpInside" id="qzP-9t-AiM"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카카오톡" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="o2q-tc-jOZ" userLabel="sKaKaoLinkLabel">
-                                        <rect key="frame" x="102" y="81" width="52" height="20"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="DVK-Jw-Mma">
+                                        <rect key="frame" x="28" y="32" width="41" height="41"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
+                                        <state key="normal" image="calendarIcon.png"/>
+                                        <connections>
+                                            <action selector="actCalendarEvent:" destination="AKc-As-1My" eventType="touchUpInside" id="mAB-Qi-ewx"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카카오톡" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4Yn-5N-EVd" userLabel="sKaKaoLinkLabel">
+                                        <rect key="frame" x="105" y="81" width="52" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="트위터" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="w7u-z2-6kr" userLabel="sTwitterLabel">
-                                        <rect key="frame" x="176" y="81" width="52" height="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="트위터" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PeV-6Z-QWN" userLabel="sTwitterLabel">
+                                        <rect key="frame" x="188" y="81" width="52" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="페이스북" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="USN-BD-DM2" userLabel="sFaceBookLabel">
-                                        <rect key="frame" x="252" y="81" width="52" height="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="캘린더 등록" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="q9X-Bz-rjI" userLabel="sCalendarLabel">
+                                        <rect key="frame" x="22" y="81" width="52" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카카오스토리" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fuQ-RF-yOD" userLabel="sKakaoStoryLabel">
-                                        <rect key="frame" x="31" y="81" width="52" height="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="페이스북" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cg6-tP-eew" userLabel="sFaceBookLabel">
+                                        <rect key="frame" x="265" y="81" width="52" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="OO0-oI-CDS"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationItem key="navigationItem" id="W7l-L2-B9j"/>
                     <connections>
-                        <outlet property="backBtn" destination="tPx-MH-Q40" id="WNo-ZR-WlL"/>
-                        <outlet property="btnsBg" destination="JJZ-gw-avl" id="MpD-Hm-Xls"/>
-                        <outlet property="contentLabel" destination="DgL-Sx-ANH" id="Csg-fV-R5V"/>
-                        <outlet property="endTimeLabel" destination="PSC-rv-jrO" id="VV9-mr-7JU"/>
-                        <outlet property="explainLabel" destination="QUE-jh-kUR" id="vym-Bq-LE0"/>
-                        <outlet property="faceBookBtn" destination="xQ9-cD-BXL" id="M6J-3A-abA"/>
-                        <outlet property="favorBtn" destination="51w-hG-DiN" id="euY-kP-fhd"/>
-                        <outlet property="hiddenView" destination="EK6-wM-rbA" id="PrB-uh-FEh"/>
-                        <outlet property="kakaoLinkBtn" destination="ihx-U0-Fed" id="8xC-Uf-mu7"/>
-                        <outlet property="kakaoStoryBtn" destination="xWP-kV-52m" id="qze-4t-cnf"/>
-                        <outlet property="labelsBg" destination="Yhh-zn-Zcf" id="Pdx-Up-TX5"/>
-                        <outlet property="mapView" destination="GJm-L7-Ytl" id="dP1-BN-TXr"/>
-                        <outlet property="mapViewLabel" destination="Yvj-OH-j6r" id="dPP-B0-JLO"/>
-                        <outlet property="nameLabel" destination="CYm-sP-lgr" id="ga7-Zi-MEA"/>
-                        <outlet property="naviBarImage" destination="7hw-KI-OdD" id="FLC-jH-pY9"/>
-                        <outlet property="periodLabel" destination="hhb-Eg-yr0" id="7Ug-Yr-6ek"/>
-                        <outlet property="phoneBtn" destination="FIB-aE-K3T" id="iKk-ko-CY9"/>
-                        <outlet property="placeLabel" destination="erZ-Xp-0d7" id="Sm7-vh-ISN"/>
-                        <outlet property="sCallLabel" destination="Qhr-qi-N95" id="D2z-qq-p8W"/>
-                        <outlet property="sContentLabel" destination="3N2-py-Q7N" id="lRA-wU-Tad"/>
-                        <outlet property="sFaceBookLabel" destination="USN-BD-DM2" id="sIN-HN-BXf"/>
-                        <outlet property="sFavorLabel" destination="i94-LF-5Zg" id="MfH-WZ-bQB"/>
-                        <outlet property="sKaKaoLinkLabel" destination="o2q-tc-jOZ" id="yfs-hW-Vl1"/>
-                        <outlet property="sKakaoStoryLabel" destination="fuQ-RF-yOD" id="2X3-B3-3uf"/>
-                        <outlet property="sNameLabel" destination="5V7-gV-xBL" id="GbG-Hb-wgA"/>
-                        <outlet property="sPeriodLabel" destination="Kwp-sK-PaR" id="1JR-Vc-8AV"/>
-                        <outlet property="sPlaceLabel" destination="jXQ-kC-o9l" id="7aH-kY-irg"/>
-                        <outlet property="sShareLabel" destination="d6L-Ku-Yge" id="vfL-Wv-JZn"/>
-                        <outlet property="sTimeLabel" destination="1UV-A6-oV3" id="X42-k1-5A0"/>
-                        <outlet property="sTwitterLabel" destination="w7u-z2-6kr" id="ZcC-kv-1CL"/>
-                        <outlet property="selectImage" destination="WLI-Rw-6lm" id="kuO-4H-VWr"/>
-                        <outlet property="shareBackBtn" destination="mEw-OM-ZnA" id="7sI-jT-tpB"/>
-                        <outlet property="shareBtn" destination="wRI-eB-Jdi" id="DaZ-bL-lac"/>
-                        <outlet property="shareView" destination="qha-Fa-y1A" id="jCC-Sq-Coz"/>
-                        <outlet property="startTimeLabel" destination="v6p-cO-jnG" id="tWE-wQ-xBT"/>
-                        <outlet property="thumbnailImage" destination="OV4-I5-9mR" id="xjm-6Z-fm8"/>
-                        <outlet property="titleLabel" destination="2Kr-hj-Ohx" id="BB3-hF-mVD"/>
-                        <outlet property="twitterBtn" destination="taa-K7-Daz" id="r4E-AZ-Dyr"/>
-                        <outlet property="uiScrollView" destination="LkB-bc-imo" id="50A-hG-9lE"/>
-                        <outlet property="uiSegment" destination="VQy-ta-Kkj" id="uhW-AE-aKo"/>
+                        <outlet property="backBtn" destination="IFx-O2-v4t" id="WMr-4W-hR5"/>
+                        <outlet property="btnsBg" destination="Jvc-Uf-2en" id="no3-3P-bq8"/>
+                        <outlet property="calendarBtn" destination="DVK-Jw-Mma" id="f7t-eR-lmR"/>
+                        <outlet property="contentLabel" destination="TZs-TP-rF6" id="80A-Py-xHU"/>
+                        <outlet property="endTimeLabel" destination="Nrc-97-DK2" id="Jhh-6c-MeW"/>
+                        <outlet property="explainLabel" destination="acR-km-45U" id="9we-8Y-ZFj"/>
+                        <outlet property="faceBookBtn" destination="gBL-9r-x9v" id="Y1D-8e-dLz"/>
+                        <outlet property="favorBtn" destination="3cD-Tv-ay3" id="Q2f-KW-xel"/>
+                        <outlet property="hiddenView" destination="LyI-O9-kP4" id="G7Q-mt-SW6"/>
+                        <outlet property="kakaoLinkBtn" destination="C8q-5M-bQ9" id="1FG-Bo-YAE"/>
+                        <outlet property="labelsBg" destination="zK1-zJ-XxC" id="L7r-3A-Kuu"/>
+                        <outlet property="mapView" destination="9cX-6g-5Nq" id="0cF-f5-R1i"/>
+                        <outlet property="mapViewLabel" destination="TDR-dV-dka" id="auV-yZ-Aac"/>
+                        <outlet property="nameLabel" destination="Wf1-s7-j3y" id="672-Am-Bj6"/>
+                        <outlet property="naviBarImage" destination="gF1-Ov-ieo" id="2Uw-50-D1d"/>
+                        <outlet property="periodLabel" destination="KBC-KZ-sE4" id="T9Y-XH-6xI"/>
+                        <outlet property="phoneBtn" destination="xuh-Ja-GZa" id="tcA-x1-TDV"/>
+                        <outlet property="placeLabel" destination="c5D-qZ-ZJg" id="h73-SL-N44"/>
+                        <outlet property="sCalendarLabel" destination="q9X-Bz-rjI" id="HAm-b6-G2N"/>
+                        <outlet property="sCallLabel" destination="5iH-1T-0dN" id="dnt-Se-AEg"/>
+                        <outlet property="sContentLabel" destination="290-yA-liZ" id="4hn-8v-2ed"/>
+                        <outlet property="sFaceBookLabel" destination="cg6-tP-eew" id="pSX-cC-BSF"/>
+                        <outlet property="sFavorLabel" destination="sDa-h1-vfg" id="Bhm-sy-oTk"/>
+                        <outlet property="sKaKaoLinkLabel" destination="4Yn-5N-EVd" id="i42-FW-VfP"/>
+                        <outlet property="sNameLabel" destination="DI4-7O-GJl" id="7zl-Qk-Jhi"/>
+                        <outlet property="sPeriodLabel" destination="srk-1Z-L0U" id="qNf-zI-Lid"/>
+                        <outlet property="sPlaceLabel" destination="knx-KW-mt8" id="eeb-1d-c5Y"/>
+                        <outlet property="sShareLabel" destination="tSh-Md-cfI" id="C3A-En-wL4"/>
+                        <outlet property="sTimeLabel" destination="M8A-qX-LV9" id="cBG-fT-orB"/>
+                        <outlet property="sTwitterLabel" destination="PeV-6Z-QWN" id="2O5-UW-0Tr"/>
+                        <outlet property="selectImage" destination="9lK-zO-zzs" id="CdD-kJ-B8o"/>
+                        <outlet property="shareBackBtn" destination="YTX-cL-XhU" id="Gbt-zf-ZIP"/>
+                        <outlet property="shareBtn" destination="cfy-p5-J3b" id="Dv4-pL-d71"/>
+                        <outlet property="shareView" destination="Ij4-9O-n5X" id="YjB-Zn-gYi"/>
+                        <outlet property="startTimeLabel" destination="wNY-vk-VL9" id="eHj-YV-mal"/>
+                        <outlet property="thumbnailImage" destination="xyl-3U-BNe" id="4hq-OI-uh1"/>
+                        <outlet property="titleLabel" destination="ja1-61-3Qb" id="b2e-lM-SKo"/>
+                        <outlet property="twitterBtn" destination="vGl-RI-D6r" id="0PE-Np-myy"/>
+                        <outlet property="uiScrollView" destination="uAC-gB-iSM" id="cEh-BR-ZQ9"/>
+                        <outlet property="uiSegment" destination="mfk-Ar-Sak" id="byn-Kv-IRT"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Z9U-nY-ou3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6zi-Jj-54i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3054.5" y="216.5"/>
+            <point key="canvasLocation" x="3607.5" y="215.5"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="eeL-Im-8V7">
@@ -382,6 +422,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="70" sectionHeaderHeight="22" sectionFooterHeight="22" id="M8p-es-gQa">
                                 <rect key="frame" x="0.0" y="203" width="375" height="464"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" rowHeight="70" id="zlg-bP-yez">
@@ -394,14 +435,17 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hTh-ng-T0i">
                                                     <rect key="frame" x="31" y="24" width="263" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <animations/>
                                         </tableViewCellContentView>
+                                        <animations/>
                                         <connections>
-                                            <segue destination="Xlw-Bx-LZp" kind="push" identifier="goDetail" id="96P-PL-brP"/>
+                                            <segue destination="AKc-As-1My" kind="push" identifier="goDetail" id="oO3-Rg-EXV"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -409,14 +453,17 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="naviBarImg.png" id="Hto-tW-xgm" userLabel="naviBar">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="allbg.png" id="cSg-ae-sy0" userLabel="bgImage">
                                 <rect key="frame" x="0.0" y="59" width="375" height="166"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="종류" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Nz0-Lx-AqD">
                                 <rect key="frame" x="134" y="28" width="106" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -424,6 +471,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Wqh-9G-sh3" userLabel="backBtn">
                                 <rect key="frame" x="0.0" y="12" width="44" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="&lt;">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -433,6 +481,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="oSA-e7-XxY"/>
@@ -447,7 +496,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eI4-AJ-g6f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2593.5" y="215.5"/>
+            <point key="canvasLocation" x="3125.5" y="215.5"/>
         </scene>
         <!--Info View Controller-->
         <scene sceneID="X9a-FK-RBT">
@@ -460,14 +509,17 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="naviBarImg.png" id="oQV-aW-pQZ" userLabel="naviBar">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info.png" id="YeB-Gc-Z68" userLabel="infoImg">
                                 <rect key="frame" x="0.0" y="56" width="375" height="611"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="DxB-e7-RL3" userLabel="goHowTo">
                                 <rect key="frame" x="37" y="566" width="117" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <state key="normal" title="Button" image="info_button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -478,6 +530,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="k80-r8-knn" userLabel="goHomePageBtn">
                                 <rect key="frame" x="72" y="182" width="115" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -488,6 +541,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HTW-Xy-hdE" userLabel="backBtn">
                                 <rect key="frame" x="0.0" y="12" width="44" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="&lt;">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -497,6 +551,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="F1Y-3H-S5v"/>
@@ -511,7 +566,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TpQ-7l-vCz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2031.5" y="999.5"/>
+            <point key="canvasLocation" x="2582.5" y="999.5"/>
         </scene>
         <!--Home Page View Controller-->
         <scene sceneID="dBU-84-eQO">
@@ -524,15 +579,18 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="naviBarImg.png" id="M4H-Wl-vrl" userLabel="naviBar">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                             </imageView>
                             <webView contentMode="scaleToFill" id="xBv-2Y-gGM">
                                 <rect key="frame" x="0.0" y="57" width="375" height="610"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="PCl-wJ-CfI" userLabel="backBtn">
                                 <rect key="frame" x="0.0" y="12" width="44" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="&lt;">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -543,6 +601,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="9An-EZ-Znt"/>
@@ -567,10 +626,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="naviBarImg.png" id="mEt-ay-Qaz" userLabel="naviBar">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6Nj-jY-iRh" userLabel="backBtn">
                                 <rect key="frame" x="0.0" y="12" width="44" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="&lt;">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -583,10 +644,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info2-1.png" id="hh0-ve-dWt">
                                 <rect key="frame" x="0.0" y="58" width="375" height="623"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="v45-HI-aJ1">
                                 <rect key="frame" x="64" y="571" width="139" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -595,6 +658,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="sJP-kt-lo4"/>
@@ -619,6 +683,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="70" sectionHeaderHeight="22" sectionFooterHeight="22" id="dxW-Yb-wEi">
                                 <rect key="frame" x="0.0" y="203" width="375" height="464"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="FavorCell" rowHeight="70" id="cAX-9T-V6X">
@@ -631,12 +696,15 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="201" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Wmh-TL-qux">
                                                     <rect key="frame" x="33" y="24" width="197" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <animations/>
                                         </tableViewCellContentView>
+                                        <animations/>
                                         <connections>
                                             <segue destination="78i-zT-ePo" kind="push" identifier="goFavorDetail" id="pSA-Se-WjN"/>
                                         </connections>
@@ -646,14 +714,17 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="favorbg.png" id="RZs-pR-490" userLabel="bgImage">
                                 <rect key="frame" x="0.0" y="60" width="375" height="164"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="naviBarImg.png" id="SR3-Z6-uJC" userLabel="naviBar">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2jx-8p-Byi" userLabel="backBtn">
                                 <rect key="frame" x="0.0" y="13" width="44" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="&lt;">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -665,11 +736,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="즐겨찾기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GHt-nY-T5y">
                                 <rect key="frame" x="134" y="28" width="106" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="a14-eD-O8s"/>
@@ -684,7 +757,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j1b-gM-Jnw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2593.5" y="999.5"/>
+            <point key="canvasLocation" x="3131.5" y="999.5"/>
         </scene>
         <!--Favor Detail View Controller-->
         <scene sceneID="HC7-3F-j0j">
@@ -701,16 +774,19 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="KVO-es-nPx" userLabel="Labels_Bg">
                                         <rect key="frame" x="5" y="330" width="365" height="255"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Xx5-88-1os" userLabel="Btns_Bg">
                                         <rect key="frame" x="5" y="593" width="365" height="66"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주최" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZgR-Y3-oOI" userLabel="NameLabel">
                                         <rect key="frame" x="97" y="549" width="150" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -718,6 +794,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="장소" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sVr-cS-Bck" userLabel="PlaceLabel">
                                         <rect key="frame" x="97" y="360" width="250" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -725,6 +802,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시간" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7XL-fm-qJb" userLabel="StartTimeLabel">
                                         <rect key="frame" x="97" y="388" width="93" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -732,6 +810,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="~" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UtK-wV-I0m" userLabel="GabTimeLabel">
                                         <rect key="frame" x="195" y="388" width="19" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -739,6 +818,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="요금" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3gn-Ju-NK5" userLabel="PeriodLabel">
                                         <rect key="frame" x="97" y="416" width="150" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -746,6 +826,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시간" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gZF-Tl-B0E" userLabel="EndTimeLabel">
                                         <rect key="frame" x="243" y="388" width="117" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -753,6 +834,7 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="ㄴㄴ" id="bb7-B0-Lf5" userLabel="ContentLabel">
                                         <rect key="frame" x="91" y="444" width="248" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -760,6 +842,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="장소" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qPR-KQ-1zX" userLabel="sPlaceLabel">
                                         <rect key="frame" x="29" y="360" width="60" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.20000000000000001" green="0.33725490200000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -767,6 +850,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시간" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="a0M-mr-w6H" userLabel="sTimeLabel">
                                         <rect key="frame" x="29" y="388" width="60" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.20000000000000001" green="0.33725490200000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -774,6 +858,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주최" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Wmm-j8-w8V" userLabel="sNameLabel">
                                         <rect key="frame" x="29" y="549" width="60" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.20000000000000001" green="0.33725490200000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -781,6 +866,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내용" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RfT-ch-kTR" userLabel="sContentLabel">
                                         <rect key="frame" x="29" y="452" width="60" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.20000000000000001" green="0.33725490200000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -788,6 +874,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="요금" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oyZ-EH-xhU" userLabel="sPeriodLabel">
                                         <rect key="frame" x="29" y="416" width="60" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.20000000000000001" green="0.33725490200000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -795,6 +882,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mjS-R1-WIW" userLabel="FavorCancelBtn">
                                         <rect key="frame" x="272" y="605" width="25" height="25"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <state key="normal" image="favor_heart_add.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -805,6 +893,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hqG-zt-sjd" userLabel="ShareBtn">
                                         <rect key="frame" x="72" y="605" width="25" height="25"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <state key="normal" image="ShareBtn.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -815,6 +904,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pOJ-Qi-5Zt" userLabel="PhoneCallBtn">
                                         <rect key="frame" x="172" y="605" width="27" height="27"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <state key="normal" image="phoneCall_icon.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -825,6 +915,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="공유하기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rCM-yJ-81S" userLabel="sShareLabel">
                                         <rect key="frame" x="54" y="633" width="60" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                         <color key="textColor" red="0.20000000000000001" green="0.33725490200000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -832,6 +923,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="전화하기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Zl1-ng-S88" userLabel="sCallLabel">
                                         <rect key="frame" x="155" y="633" width="60" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                         <color key="textColor" red="0.20000000000000001" green="0.33725490200000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -839,10 +931,12 @@
                                     <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="1iq-fm-cBS" userLabel="MapView">
                                         <rect key="frame" x="380" y="333" width="365" height="236"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                     </mapView>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="bxZ-NG-dQo" userLabel="SegumentStyle">
                                         <rect key="frame" x="425" y="583" width="275" height="29"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <segments>
                                             <segment title="지도"/>
                                             <segment title="위성"/>
@@ -855,19 +949,23 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="즐겨찾기 취소" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="r6m-nh-fYE" userLabel="sFavorLabel">
                                         <rect key="frame" x="254" y="633" width="60" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                         <color key="textColor" red="0.20000000000000001" green="0.33725490200000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <animations/>
                             </scrollView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="naviBarImg.png" id="59e-HP-HLZ" userLabel="NaviBar">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="P4j-pd-oQU" userLabel="backBtn">
                                 <rect key="frame" x="0.0" y="12" width="44" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="&lt;">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -880,6 +978,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="제목" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GYE-2Y-0vQ" userLabel="NaviTitleLabel">
                                 <rect key="frame" x="85" y="17" width="204" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -887,11 +986,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="out-co-dvx" userLabel="ThumnailImage">
                                 <rect key="frame" x="0.0" y="58" width="375" height="219"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지도" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7uF-nl-ONV" userLabel="MapLabel">
                                 <rect key="frame" x="188" y="276" width="187" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <color key="backgroundColor" red="0.54399671049999998" green="0.66124236089999999" blue="0.41802014799999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -900,6 +1001,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="설명" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gt8-gE-wJ5" userLabel="ExplainLabel">
                                 <rect key="frame" x="0.0" y="276" width="188" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.33725490200000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -908,6 +1010,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Select_Bar.png" id="vK3-Fd-qaU" userLabel="SelectedImage">
                                 <rect key="frame" x="0.0" y="313" width="188" height="10"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                             </imageView>
                             <view alpha="0.0" contentMode="scaleToFill" id="wcM-4i-xbC" userLabel="HiddenView">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -916,6 +1019,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eUb-h2-2SH" userLabel="ShareBackBtn">
                                         <rect key="frame" x="0.0" y="61" width="375" height="606"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <state key="normal">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -924,35 +1028,17 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" id="Hca-a1-cxv" userLabel="ShareView">
-                                <rect key="frame" x="15" y="668" width="345" height="110"/>
+                                <rect key="frame" x="15" y="667" width="345" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fgX-4Q-Py0" userLabel="KaKaoLink">
-                                        <rect key="frame" x="111" y="27" width="41" height="41"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="KakaoLinkIcon.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="actKakaoLink:" destination="78i-zT-ePo" eventType="touchUpInside" id="osl-mU-iWw"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3D2-rT-RCH" userLabel="KakaoStory">
-                                        <rect key="frame" x="33" y="27" width="41" height="41"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="KakaoStoryIcon.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="actKakaoStory:" destination="78i-zT-ePo" eventType="touchUpInside" id="7aa-Rl-z6d"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="A6R-hp-9b6" userLabel="FaceBook">
                                         <rect key="frame" x="271" y="27" width="41" height="41"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <state key="normal" image="FaceBookIcon.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -963,6 +1049,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BkU-eJ-LoT" userLabel="Twitter">
                                         <rect key="frame" x="191" y="27" width="41" height="41"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <state key="normal" image="TwitterIcon.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -970,23 +1057,10 @@
                                             <action selector="actTwitter:" destination="78i-zT-ePo" eventType="touchUpInside" id="f5h-Qx-bn0"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카카오톡" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qSy-2O-HQL" userLabel="sKaKaoLinkLabel">
-                                        <rect key="frame" x="105" y="76" width="52" height="20"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카카오스토리" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5tk-hU-dio" userLabel="sKakaoStoryLabel">
-                                        <rect key="frame" x="27" y="76" width="52" height="20"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="트위터" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="F6s-k2-xzV" userLabel="sTwitterLabel">
                                         <rect key="frame" x="185" y="76" width="52" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -994,14 +1068,53 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="페이스북" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3Vi-0I-BsD" userLabel="sFaceBookLabel">
                                         <rect key="frame" x="265" y="76" width="52" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="캘린더 등록" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xm6-uZ-rek" userLabel="sCalendarLabel">
+                                        <rect key="frame" x="23" y="76" width="52" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="UI2-lq-uZh">
+                                        <rect key="frame" x="29" y="27" width="41" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
+                                        <state key="normal" image="calendarIcon.png"/>
+                                        <connections>
+                                            <action selector="actCalendar:" destination="78i-zT-ePo" eventType="touchUpInside" id="ZVD-7z-mLt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fgX-4Q-Py0" userLabel="KaKaoLink">
+                                        <rect key="frame" x="107" y="27" width="41" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
+                                        <state key="normal" image="KakaoLinkIcon.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="actKakaoLink:" destination="78i-zT-ePo" eventType="touchUpInside" id="osl-mU-iWw"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카카오톡" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qSy-2O-HQL" userLabel="sKaKaoLinkLabel">
+                                        <rect key="frame" x="101" y="76" width="52" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="LlP-wP-Mg3"/>
@@ -1009,6 +1122,7 @@
                     <connections>
                         <outlet property="backBtn" destination="P4j-pd-oQU" id="2Cu-LM-4Uk"/>
                         <outlet property="btnsBg" destination="Xx5-88-1os" id="7Sl-ed-Qz6"/>
+                        <outlet property="calendarBtn" destination="UI2-lq-uZh" id="W0B-bo-KQG"/>
                         <outlet property="cancelBtn" destination="mjS-R1-WIW" id="TVc-em-wt3"/>
                         <outlet property="contentLabel" destination="bb7-B0-Lf5" id="bdu-nR-cJY"/>
                         <outlet property="endTimeLabel" destination="gZF-Tl-B0E" id="0es-hJ-Hee"/>
@@ -1016,7 +1130,6 @@
                         <outlet property="faceBookBtn" destination="A6R-hp-9b6" id="WXE-6B-0ZH"/>
                         <outlet property="hiddenView" destination="wcM-4i-xbC" id="5rT-hU-zfL"/>
                         <outlet property="kakaoLinkBtn" destination="fgX-4Q-Py0" id="EIU-pz-6Z1"/>
-                        <outlet property="kakaoStoryBtn" destination="3D2-rT-RCH" id="2s4-cX-gKa"/>
                         <outlet property="labelsBg" destination="KVO-es-nPx" id="YJ7-ds-Q8c"/>
                         <outlet property="mapView" destination="1iq-fm-cBS" id="5IK-1L-Ca0"/>
                         <outlet property="mapViewLabel" destination="7uF-nl-ONV" id="NyA-yD-w89"/>
@@ -1025,12 +1138,12 @@
                         <outlet property="periodLabel" destination="3gn-Ju-NK5" id="jKP-tv-ZUR"/>
                         <outlet property="phoneBtn" destination="pOJ-Qi-5Zt" id="aSu-0D-9Gj"/>
                         <outlet property="placeLabel" destination="sVr-cS-Bck" id="Zfm-GX-rfE"/>
+                        <outlet property="sCalendarLabel" destination="xm6-uZ-rek" id="cgV-IA-efG"/>
                         <outlet property="sCallLabel" destination="Zl1-ng-S88" id="bFz-in-OnZ"/>
                         <outlet property="sContentLabel" destination="RfT-ch-kTR" id="WbU-1e-BR3"/>
                         <outlet property="sFaceBookLabel" destination="3Vi-0I-BsD" id="cXG-iu-td6"/>
                         <outlet property="sFavorLabel" destination="r6m-nh-fYE" id="fqg-dM-Ez2"/>
                         <outlet property="sKaKaoLinkLabel" destination="qSy-2O-HQL" id="WNz-7I-iXK"/>
-                        <outlet property="sKakaoStoryLabel" destination="5tk-hU-dio" id="maq-wh-cif"/>
                         <outlet property="sNameLabel" destination="Wmm-j8-w8V" id="SHl-1d-BQh"/>
                         <outlet property="sPeriodLabel" destination="oyZ-EH-xhU" id="cCf-k8-cKq"/>
                         <outlet property="sPlaceLabel" destination="qPR-KQ-1zX" id="g0k-R2-Chg"/>
@@ -1051,7 +1164,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XnO-YL-3zi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3062.5" y="1007.5"/>
+            <point key="canvasLocation" x="3607.5" y="999.5"/>
         </scene>
         <!--ViewController-->
         <scene sceneID="2Ez-Tk-XrQ">
@@ -1064,22 +1177,27 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainBg.png" id="4oq-Ni-GOj">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bg_MusicIcon.png" id="GHF-6Z-s9N" userLabel="음표1">
                                 <rect key="frame" x="263" y="421" width="12" height="12"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bg_MusicIcon2.png" id="tSm-82-3Fa" userLabel="음표3">
                                 <rect key="frame" x="64" y="460" width="16" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bg_MusicIcon2.png" id="uXk-1L-92G" userLabel="음표4">
                                 <rect key="frame" x="280" y="137" width="16" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bg_MusicIcon.png" id="yWh-Zm-3TA" userLabel="음표2">
                                 <rect key="frame" x="85" y="90" width="12" height="12"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="AMd-ac-k7K">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -1088,12 +1206,15 @@
                                     <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PARM.png" id="zO3-d1-eNu">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1875"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <animations/>
                                     </imageView>
                                 </subviews>
+                                <animations/>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="NxX-8y-tam" userLabel="전시버튼">
                                 <rect key="frame" x="150" y="240" width="79" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <state key="normal" image="exhibitBtn.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1104,6 +1225,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ifd-c3-SKA" userLabel="공연버튼">
                                 <rect key="frame" x="155" y="245" width="67" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <state key="normal" image="eventBtn.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1114,6 +1236,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zMc-DA-DfS" userLabel="마켓버튼">
                                 <rect key="frame" x="155" y="245" width="67" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <state key="normal" image="marketBtn.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1124,6 +1247,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wLp-47-9gf" userLabel="즐겨찾기버튼">
                                 <rect key="frame" x="155" y="245" width="67" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <state key="normal" image="favorBtn.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1134,6 +1258,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6Yk-7s-Bv4" userLabel="정보버튼">
                                 <rect key="frame" x="155" y="245" width="67" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <state key="normal" image="infoBtn.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1144,6 +1269,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WJf-6t-qEI" userLabel="모두버튼">
                                 <rect key="frame" x="155" y="245" width="67" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <state key="normal" image="allBtn.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1154,6 +1280,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1jV-YC-BD0" userLabel="메뉴버튼">
                                 <rect key="frame" x="127" y="223" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <state key="normal" image="menuBtn.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1161,7 +1288,13 @@
                                     <action selector="actMenuBtn:" destination="xcn-dJ-h4c" eventType="touchUpInside" id="71i-x7-16U"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Intro.png" id="bor-wr-P1L" userLabel="introBg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="BCr-WJ-dUv"/>
@@ -1178,6 +1311,7 @@
                         <outlet property="infoBg" destination="zO3-d1-eNu" id="Boz-w4-mZx"/>
                         <outlet property="infoBtn" destination="6Yk-7s-Bv4" id="e8M-7c-gBR"/>
                         <outlet property="infoScrollView" destination="AMd-ac-k7K" id="SOB-tu-qhu"/>
+                        <outlet property="introBg" destination="bor-wr-P1L" id="7rB-0V-Ag5"/>
                         <outlet property="mainBg" destination="4oq-Ni-GOj" id="plr-fH-Trf"/>
                         <outlet property="marketBtn" destination="zMc-DA-DfS" id="YdV-Dd-Qug"/>
                         <outlet property="menuBtn" destination="1jV-YC-BD0" id="zUM-tm-WeT"/>
@@ -1185,51 +1319,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4wx-kV-01o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2031.5" y="278.5"/>
-        </scene>
-        <!--Intro View Controller-->
-        <scene sceneID="I7w-ky-R0L">
-            <objects>
-                <viewController id="ccT-89-MDQ" customClass="IntroViewController" customModule="CWMeta" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="N50-zn-Fdd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Intro.png" id="yyW-10-H1q" userLabel="introBg">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="K32-pF-amf"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="introImage" destination="yyW-10-H1q" id="R4O-vG-935"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Mfz-Ke-k3L" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1539.5" y="278.5"/>
+            <point key="canvasLocation" x="2582.5" y="216.5"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="uxx-tT-Grz">
+        <scene sceneID="8Ms-Ny-Dve">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="tuI-RY-cgk" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="6kS-Be-DCs" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="o8e-HL-Bg4">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GG1-LF-acf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="ccT-89-MDQ" kind="relationship" relationship="rootViewController" id="s0S-hA-naB"/>
+                        <segue destination="xcn-dJ-h4c" kind="relationship" relationship="rootViewController" id="r3v-Pm-Amt"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6IO-yv-rnG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nZv-2A-34G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1009.5" y="278.5"/>
+            <point key="canvasLocation" x="2048.5" y="216.5"/>
         </scene>
     </scenes>
     <resources>
@@ -1239,13 +1349,13 @@
         <image name="FaceBookIcon.png" width="144" height="144"/>
         <image name="Intro.png" width="1240" height="2207"/>
         <image name="KakaoLinkIcon.png" width="144" height="144"/>
-        <image name="KakaoStoryIcon.png" width="144" height="144"/>
         <image name="PARM.png" width="1080" height="4501"/>
         <image name="Select_Bar.png" width="414" height="46"/>
         <image name="ShareBtn.png" width="105" height="104"/>
         <image name="TwitterIcon.png" width="144" height="144"/>
         <image name="allBtn.png" width="241" height="272"/>
         <image name="allbg.png" width="1240" height="552"/>
+        <image name="calendarIcon.png" width="256" height="256"/>
         <image name="eventBtn.png" width="241" height="272"/>
         <image name="exhibitBtn.png" width="241" height="272"/>
         <image name="favorBtn.png" width="241" height="272"/>
@@ -1261,13 +1371,8 @@
         <image name="naviBarImg.png" width="1240" height="204"/>
         <image name="phoneCall_icon.png" width="105" height="104"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="kAQ-Uy-2v6"/>
-        <segue reference="isP-oH-Pgd"/>
+        <segue reference="KAv-C7-CFt"/>
     </inferredMetricsTieBreakers>
 </document>

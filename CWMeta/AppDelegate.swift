@@ -20,24 +20,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     func initPlist(){
-        var fileManager = NSFileManager()
+        let fileManager = NSFileManager()
         //var error = NSError()
         var path = NSString()
         path = getPlistPath()
-        var success = fileManager.fileExistsAtPath(path as String)
+        let success = fileManager.fileExistsAtPath(path as String)
         
         if(!success){
-            let defalutPath = NSBundle.mainBundle().resourcePath?.stringByAppendingPathComponent("myFavorite.plist")
+            let defalutPath = NSBundle.mainBundle().resourcePath?.stringByAppendingString("/myFavorite.plist")
             
-            fileManager.copyItemAtPath(defalutPath!, toPath: path as String, error: nil)
+            do {
+                try fileManager.copyItemAtPath(defalutPath!, toPath: path as String)
+            } catch _ {
+            }
         }
         
     }
     
     func getPlistPath() -> String {
         var docsDir = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)
-        let docPath = docsDir[0] as! String
-        let fullName = docPath.stringByAppendingPathComponent("myFavorite.plist")
+        let docPath = docsDir[0] 
+        let fullName = docPath.stringByAppendingString("/myFavorite.plist")
         return fullName
     }
 

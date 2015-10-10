@@ -24,6 +24,7 @@
 		034106DF1B4CFAE8004F88E2 /* backBtnImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 034106DE1B4CFAE8004F88E2 /* backBtnImg.png */; };
 		034106E11B4CFAF8004F88E2 /* naviBarImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 034106E01B4CFAF8004F88E2 /* naviBarImg.png */; };
 		034106E51B4D563B004F88E2 /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034106E41B4D563B004F88E2 /* KakaoOpenSDK.framework */; };
+		0356D1AD1BC2A45E00F4CD74 /* calendarIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0356D1AC1BC2A45E00F4CD74 /* calendarIcon.png */; settings = {ASSET_TAGS = (); }; };
 		035F5C011B54C28E003EBC01 /* Select_Bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 035F5C001B54C28E003EBC01 /* Select_Bar.png */; };
 		035F5C071B54C781003EBC01 /* Detail_FavorBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 035F5C021B54C781003EBC01 /* Detail_FavorBtn.png */; };
 		035F5C081B54C781003EBC01 /* FaceBookIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 035F5C031B54C781003EBC01 /* FaceBookIcon.png */; };
@@ -66,7 +67,6 @@
 		03F15BC11B56130200ABA251 /* phoneCall_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 03F15BBF1B56130200ABA251 /* phoneCall_icon.png */; };
 		03F15BC31B562EB900ABA251 /* ShareBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 03F15BC21B562EB900ABA251 /* ShareBtn.png */; };
 		03F15BC51B563C0D00ABA251 /* favor_heart_add.png in Resources */ = {isa = PBXBuildFile; fileRef = 03F15BC41B563C0D00ABA251 /* favor_heart_add.png */; };
-		03F15BC71B56656400ABA251 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F15BC61B56656400ABA251 /* IntroViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +97,7 @@
 		034106DE1B4CFAE8004F88E2 /* backBtnImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backBtnImg.png; sourceTree = "<group>"; };
 		034106E01B4CFAF8004F88E2 /* naviBarImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = naviBarImg.png; sourceTree = "<group>"; };
 		034106E41B4D563B004F88E2 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
+		0356D1AC1BC2A45E00F4CD74 /* calendarIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendarIcon.png; sourceTree = "<group>"; };
 		035F5C001B54C28E003EBC01 /* Select_Bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Select_Bar.png; sourceTree = "<group>"; };
 		035F5C021B54C781003EBC01 /* Detail_FavorBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Detail_FavorBtn.png; sourceTree = "<group>"; };
 		035F5C031B54C781003EBC01 /* FaceBookIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FaceBookIcon.png; sourceTree = "<group>"; };
@@ -106,6 +107,8 @@
 		0375D8D11B54A0F7007B8F5D /* Bg_MusicIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bg_MusicIcon.png; sourceTree = "<group>"; };
 		0375D8D21B54A0F7007B8F5D /* Bg_MusicIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bg_MusicIcon2.png; sourceTree = "<group>"; };
 		0375D8D51B54A19E007B8F5D /* mainBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainBg.png; sourceTree = "<group>"; };
+		037FE4101BBD6A8200577AFE /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
+		037FE4111BBD6A8200577AFE /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		038A8BFD1B85A32400254379 /* PARM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PARM.png; sourceTree = "<group>"; };
 		038A8C001B85EAF000254379 /* Intro@1242x2208.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Intro@1242x2208.png"; sourceTree = "<group>"; };
 		038A8C011B85EAF000254379 /* Intro@750x1134.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Intro@750x1134.png"; sourceTree = "<group>"; };
@@ -143,7 +146,6 @@
 		03F15BBF1B56130200ABA251 /* phoneCall_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phoneCall_icon.png; sourceTree = "<group>"; };
 		03F15BC21B562EB900ABA251 /* ShareBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShareBtn.png; sourceTree = "<group>"; };
 		03F15BC41B563C0D00ABA251 /* favor_heart_add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favor_heart_add.png; sourceTree = "<group>"; };
-		03F15BC61B56656400ABA251 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,11 +196,10 @@
 				03EF25D31B4BB7580078D472 /* FavorTableViewController.swift */,
 				03EF25D51B4BD6F40078D472 /* FavorDetailViewController.swift */,
 				038DE94F1B42436000C8C741 /* DataModel.swift */,
-				038DE9311B415A8D00C8C741 /* Main.storyboard */,
 				038A8C261B86103800254379 /* HowToViewController.swift */,
 				038A8C281B86104500254379 /* HomePageViewController.swift */,
 				03C37A821B4E7A49007B0EE0 /* InfoViewController.swift */,
-				03F15BC61B56656400ABA251 /* IntroViewController.swift */,
+				038DE9311B415A8D00C8C741 /* Main.storyboard */,
 				038DE9341B415A8D00C8C741 /* Images.xcassets */,
 				038DE9361B415A8D00C8C741 /* LaunchScreen.xib */,
 				038DE92B1B415A8D00C8C741 /* Supporting Files */,
@@ -209,6 +210,7 @@
 		038DE92B1B415A8D00C8C741 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0356D1AC1BC2A45E00F4CD74 /* calendarIcon.png */,
 				038A8BFD1B85A32400254379 /* PARM.png */,
 				034106D21B4CEC41004F88E2 /* allBtn.png */,
 				034106DE1B4CFAE8004F88E2 /* backBtnImg.png */,
@@ -319,7 +321,9 @@
 		038DE9201B415A8D00C8C741 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "김대호";
 				TargetAttributes = {
 					038DE9271B415A8D00C8C741 = {
@@ -337,7 +341,6 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
 			);
 			mainGroup = 038DE91F1B415A8D00C8C741;
@@ -394,6 +397,7 @@
 				034106D31B4CEC41004F88E2 /* allBtn.png in Resources */,
 				035F5C081B54C781003EBC01 /* FaceBookIcon.png in Resources */,
 				03EF25D21B4BB3E60078D472 /* myFavorite.plist in Resources */,
+				0356D1AD1BC2A45E00F4CD74 /* calendarIcon.png in Resources */,
 				03F15BC01B56130200ABA251 /* HomePage_icon.png in Resources */,
 				038A8C071B85EAF000254379 /* Intro@640x960.png in Resources */,
 				038A8C351B86349300254379 /* icon@120.png in Resources */,
@@ -420,7 +424,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03F15BC71B56656400ABA251 /* IntroViewController.swift in Sources */,
 				03EF25D41B4BB7580078D472 /* FavorTableViewController.swift in Sources */,
 				03EF25D61B4BD6F40078D472 /* FavorDetailViewController.swift in Sources */,
 				038DE9301B415A8D00C8C741 /* ViewController.swift in Sources */,
@@ -457,6 +460,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				038DE9321B415A8D00C8C741 /* Base */,
+				037FE4101BBD6A8200577AFE /* ko */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -465,6 +469,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				038DE9371B415A8D00C8C741 /* Base */,
+				037FE4111BBD6A8200577AFE /* ko */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -493,6 +498,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -562,6 +568,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Mun Design Solution Inc. (3739DSQ64T)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mun Design Solution Inc. (3739DSQ64T)";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -573,6 +580,7 @@
 					"-all_load",
 					"-ObjC",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vuda.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "KakaoOpenSDK-Bridging-Header.h";
@@ -587,6 +595,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Mun Design Solution Inc. (3739DSQ64T)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mun Design Solution Inc. (3739DSQ64T)";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -598,6 +607,7 @@
 					"-all_load",
 					"-ObjC",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vuda.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "KakaoOpenSDK-Bridging-Header.h";
@@ -609,16 +619,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = CWMetaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Yeho.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CWMeta.app/CWMeta";
 			};
@@ -628,12 +635,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
 				INFOPLIST_FILE = CWMetaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Yeho.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CWMeta.app/CWMeta";
 			};

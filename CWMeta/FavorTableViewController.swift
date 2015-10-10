@@ -25,7 +25,11 @@ class FavorTableViewController : UIViewController, UITableViewDelegate, UITableV
         let fileManager = NSFileManager.defaultManager()
         if(!fileManager.fileExistsAtPath(path)){
             let orgPath = NSBundle.mainBundle().pathForResource("myFavorite", ofType: "plist")
-            fileManager.copyItemAtPath(orgPath!, toPath: path, error: nil)
+            do {
+                try fileManager.copyItemAtPath(orgPath!, toPath: path)
+            } catch {
+            
+            }
         }
         favorArray = NSMutableArray(contentsOfFile: path)
         tbView.delegate = self
@@ -50,28 +54,25 @@ class FavorTableViewController : UIViewController, UITableViewDelegate, UITableV
     }
     func getFileName(fileName:String) -> String {
         let docsDir = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)
-        let docPath = docsDir[0] as! String
-        let fullName = docPath.stringByAppendingPathComponent(fileName)
+        let docPath = docsDir[0] 
+        let fullName = docPath.stringByAppendingString(fileName)
         return fullName
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tbView.dequeueReusableCellWithIdentifier("FavorCell", forIndexPath: indexPath) as? UITableViewCell
+        let cell = tbView.dequeueReusableCellWithIdentifier("FavorCell", forIndexPath: indexPath) as UITableViewCell
         
-        if (cell == nil) {
-            cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Cell")
-        }
-        let titleLabel = cell!.viewWithTag(201) as! UILabel
+        let titleLabel = cell.viewWithTag(201) as! UILabel
         
         titleLabel.text = favorArray.objectAtIndex(indexPath.row).valueForKey("title") as? String
         
         if(indexPath.row % 2 == 1){
-            cell?.backgroundColor = UIColor.whiteColor()
+            cell.backgroundColor = UIColor.whiteColor()
         }else{
-            cell?.backgroundColor = UIColor(red: CGFloat(237/255.0), green: CGFloat(236/255.0), blue: CGFloat(236/255.0), alpha: CGFloat(1.0))
+            cell.backgroundColor = UIColor(red: CGFloat(237/255.0), green: CGFloat(236/255.0), blue: CGFloat(236/255.0), alpha: CGFloat(1.0))
         }
         
-        return cell!
+        return cell
     }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return favorArray.count
@@ -86,10 +87,10 @@ class FavorTableViewController : UIViewController, UITableViewDelegate, UITableV
     }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if(segue.identifier == "goFavorDetail"){
-            var fdvControl = segue.destinationViewController as! FavorDetailViewController
-            fdvControl.dataDic = favorArray.objectAtIndex(tbView.indexPathForSelectedRow()!.row) as! NSDictionary
+            let fdvControl = segue.destinationViewController as! FavorDetailViewController
+            fdvControl.dataDic = favorArray.objectAtIndex(tbView.indexPathForSelectedRow!.row) as! NSDictionary
             fdvControl.favorArray = favorArray
-            fdvControl.indexPathRow = tbView.indexPathForSelectedRow()!.row
+            fdvControl.indexPathRow = tbView.indexPathForSelectedRow!.row
         }
     }
     

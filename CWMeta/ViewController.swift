@@ -17,6 +17,7 @@ class ViewController: UIViewController , UIScrollViewDelegate{
     var rotating = true
     var moveHeight :CGFloat = 190
     
+    @IBOutlet weak var introBg: UIImageView!
     @IBOutlet weak var aniImageView4: UIImageView!
     @IBOutlet weak var aniImageView3: UIImageView!
     @IBOutlet weak var aniImageView2: UIImageView!
@@ -46,8 +47,9 @@ class ViewController: UIViewController , UIScrollViewDelegate{
         super.viewDidLoad()
         self.navigationController?.navigationBar.hidden = true
         
-        infoScrollView.contentSize = CGSizeMake(view.frame.size.width, 1500)
+        infoScrollView.contentSize = CGSizeMake(view.frame.size.width, 2000)
         infoScrollView.delegate = self
+        infoScrollView.scrollEnabled = false
         let frameForHeight : CGFloat = view.frame.size.height/667
         let frameForWidth : CGFloat = view.frame.size.width/375
         moveHeight = moveHeight*frameForHeight
@@ -73,7 +75,7 @@ class ViewController: UIViewController , UIScrollViewDelegate{
             mainBg.frame.size = CGSizeMake(mainBg.frame.width * frameForWidth,  mainBg.frame.height * frameForHeight)
             infoScrollView.frame.size = CGSizeMake(infoScrollView.frame.width * frameForWidth,  infoScrollView.frame.height * frameForHeight)
             
-            UIView.animateWithDuration(1.3, delay: 0.5, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.5, options: nil, animations: {
+            UIView.animateWithDuration(1.0, delay: 5.0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.5, options: [], animations: {
                 self.favorBtn.transform = CGAffineTransformMakeTranslation(0,-120 * frameForHeight)
                 self.marketBtn.transform = CGAffineTransformMakeTranslation(110 * frameForWidth,-55 * frameForHeight)
                 self.eventBtn.transform = CGAffineTransformMakeTranslation(110 * frameForWidth,+55 * frameForHeight)
@@ -82,7 +84,7 @@ class ViewController: UIViewController , UIScrollViewDelegate{
                 self.infoBtn.transform = CGAffineTransformMakeTranslation(-110 * frameForWidth,-55 * frameForHeight)
                 }, completion: nil)
         }else {
-            UIView.animateWithDuration(1.3, delay: 0.5, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.5, options: nil, animations: {
+            UIView.animateWithDuration(1.0, delay: 5.0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.5, options: [], animations: {
                 self.favorBtn.transform = CGAffineTransformMakeTranslation(0,-120)
                 self.marketBtn.transform = CGAffineTransformMakeTranslation(110,-55)
                 self.eventBtn.transform = CGAffineTransformMakeTranslation(110,+55)
@@ -91,17 +93,24 @@ class ViewController: UIViewController , UIScrollViewDelegate{
                 self.infoBtn.transform = CGAffineTransformMakeTranslation(-110,-55)
             }, completion: nil)
         }
+        deleteImg()
         rotateOnce()
         self.modelData()
         dataModel.beginParsing()
         cagoDataArray = NSMutableArray()
         
     }
+    
+    func deleteImg(){
+        UIView.animateWithDuration(1.0, delay: 3.0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.5, options: [], animations: {
+            self.introBg.alpha = 0.0
+            }, completion: nil)
+    }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         cagoDataArray = []
         if(segue.identifier == "goMarket"){
-            var tvControl = segue.destinationViewController as! TableViewController
+            let tvControl = segue.destinationViewController as! TableViewController
         
             for (var indexNum = 0; indexNum < dataModel.posts.count; indexNum++) {
                 if(dataModel.posts.objectAtIndex(indexNum).valueForKey("category")!.isEqualToString("마켓&행사")){
@@ -111,7 +120,7 @@ class ViewController: UIViewController , UIScrollViewDelegate{
             tvControl.cagoAry = cagoDataArray as NSArray
             tvControl.currentState = segue.identifier!
         }else if(segue.identifier == "goEvent"){
-            var tvControl = segue.destinationViewController as! TableViewController
+            let tvControl = segue.destinationViewController as! TableViewController
             
             for (var indexNum = 0; indexNum < dataModel.posts.count; indexNum++) {
                 if(dataModel.posts.objectAtIndex(indexNum).valueForKey("category")!.isEqualToString("공연")){
@@ -121,7 +130,7 @@ class ViewController: UIViewController , UIScrollViewDelegate{
             tvControl.cagoAry = cagoDataArray as NSArray
             tvControl.currentState = segue.identifier!
         }else if(segue.identifier == "goExhibit"){
-            var tvControl = segue.destinationViewController as! TableViewController
+            let tvControl = segue.destinationViewController as! TableViewController
             
             for (var indexNum = 0; indexNum < dataModel.posts.count; indexNum++) {
                 if(dataModel.posts.objectAtIndex(indexNum).valueForKey("category")!.isEqualToString("전시")){
@@ -131,7 +140,7 @@ class ViewController: UIViewController , UIScrollViewDelegate{
             tvControl.cagoAry = cagoDataArray as NSArray
             tvControl.currentState = segue.identifier!
         }else if(segue.identifier == "goEtc"){
-            var tvControl = segue.destinationViewController as! TableViewController
+            let tvControl = segue.destinationViewController as! TableViewController
             
             for (var indexNum = 0; indexNum < dataModel.posts.count; indexNum++) {
                 if(dataModel.posts.objectAtIndex(indexNum).valueForKey("category")!.isEqualToString("기타")){
@@ -141,7 +150,7 @@ class ViewController: UIViewController , UIScrollViewDelegate{
             tvControl.cagoAry = cagoDataArray as NSArray
             tvControl.currentState = segue.identifier!
         }else if(segue.identifier == "goAll"){
-            var tvControl = segue.destinationViewController as! TableViewController
+            let tvControl = segue.destinationViewController as! TableViewController
             
             tvControl.cagoAry = dataModel.posts as NSArray
             tvControl.currentState = segue.identifier!
@@ -155,12 +164,12 @@ class ViewController: UIViewController , UIScrollViewDelegate{
         let frameForHeight : CGFloat = view.frame.size.height/667
         let frameForWidth : CGFloat = view.frame.size.width/375
         
-        if(transforming  == false){
-            UIView.animateWithDuration(1.2, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 0.5, options: nil, animations: {
+        if(transforming == false){
+            UIView.animateWithDuration(1.2, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 0.5, options: [], animations: {
                 self.menuBtn.transform = CGAffineTransformMakeTranslation(0,0)
                 self.infoBg.alpha = CGFloat(0.0)
                 }, completion: {finished in self.appearObj()})
-            UIView.animateWithDuration(1.3, delay: 1.5, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.5, options: nil, animations: {
+            UIView.animateWithDuration(1.3, delay: 1.5, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.5, options: [], animations: {
                 self.favorBtn.transform = CGAffineTransformMakeTranslation(0,-120 * frameForHeight)
                 self.marketBtn.transform = CGAffineTransformMakeTranslation(110 * frameForWidth,-55 * frameForHeight)
                 self.eventBtn.transform = CGAffineTransformMakeTranslation(110 * frameForWidth,+55 * frameForHeight)
@@ -170,8 +179,9 @@ class ViewController: UIViewController , UIScrollViewDelegate{
             }, completion: nil)
 
             transforming = true
+            infoScrollView.scrollEnabled = false
         }else{
-            UIView.animateWithDuration(1.0, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 0.5, options: nil, animations: {
+            UIView.animateWithDuration(1.0, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 0.5, options: [], animations: {
                 self.favorBtn.transform = CGAffineTransformMakeTranslation(0,0)
                 self.marketBtn.transform = CGAffineTransformMakeTranslation(0,0)
                 self.eventBtn.transform = CGAffineTransformMakeTranslation(0,0)
@@ -180,11 +190,12 @@ class ViewController: UIViewController , UIScrollViewDelegate{
                 self.infoBtn.transform = CGAffineTransformMakeTranslation(0,0)
                 }, completion: {finished in self.hiddenObj()})
             
-            UIView.animateWithDuration(1.3, delay: 1.0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.5, options: nil, animations: {
+            UIView.animateWithDuration(1.3, delay: 1.0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.5, options: [], animations: {
                 self.menuBtn.transform = CGAffineTransformMakeTranslation(0,-self.moveHeight * frameForHeight)
                 self.infoBg.alpha = CGFloat(1.0)
                 }, completion: nil)
             transforming = false
+            infoScrollView.scrollEnabled = true
         }
     }
     func hiddenObj(){
@@ -229,7 +240,7 @@ class ViewController: UIViewController , UIScrollViewDelegate{
         let indexPage = scrollView.contentOffset.y / scrollView.frame.height
         let indexHeight = indexPage*667+190
         if(indexHeight < 390){
-            UIView.animateWithDuration(0.5, delay: 0.00, usingSpringWithDamping: 1.0, initialSpringVelocity: 0, options: nil, animations: {
+            UIView.animateWithDuration(0.5, delay: 0.00, usingSpringWithDamping: 1.0, initialSpringVelocity: 0, options: [], animations: {
                 self.menuBtn.transform = CGAffineTransformMakeTranslation(0,-indexHeight)
                 }, completion: nil)
         }else {

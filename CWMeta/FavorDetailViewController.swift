@@ -9,6 +9,8 @@
 import UIKit
 import Social
 import MapKit
+import EventKit
+
 class FavorDetailViewController : UIViewController, UIScrollViewDelegate {
     var favorArray:NSMutableArray!
     var dataDic = NSDictionary()
@@ -29,13 +31,14 @@ class FavorDetailViewController : UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var phoneBtn: UIButton!
     @IBOutlet weak var kakaoLinkBtn: UIButton!
-    @IBOutlet weak var kakaoStoryBtn: UIButton!
+//    @IBOutlet weak var kakaoStoryBtn: UIButton!
     @IBOutlet weak var shareBackBtn: UIButton!
     @IBOutlet weak var shareBtn: UIButton!
     @IBOutlet weak var cancelBtn: UIButton!
     @IBOutlet weak var twitterBtn: UIButton!
     @IBOutlet weak var faceBookBtn: UIButton!
     @IBOutlet weak var backBtn: UIButton!
+    @IBOutlet weak var calendarBtn: UIButton!
     
     @IBOutlet weak var selectImage: UIImageView!
     @IBOutlet weak var naviBarImage: UIImageView!
@@ -59,7 +62,8 @@ class FavorDetailViewController : UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var sKaKaoLinkLabel: UILabel!
     @IBOutlet weak var sTwitterLabel: UILabel!
     @IBOutlet weak var sFaceBookLabel: UILabel!
-    @IBOutlet weak var sKakaoStoryLabel: UILabel!
+    @IBOutlet weak var sCalendarLabel: UILabel!
+//    @IBOutlet weak var sKakaoStoryLabel: UILabel!
     
     override func viewWillAppear(animated: Bool) {
         
@@ -84,7 +88,7 @@ class FavorDetailViewController : UIViewController, UIScrollViewDelegate {
             mapViewLabel.frame.origin = CGPoint(x: mapViewLabel.frame.origin.x * frameForWidth, y: mapViewLabel.frame.origin.y * frameForHeight)
             phoneBtn.frame.origin = CGPoint(x: phoneBtn.frame.origin.x * frameForWidth, y: phoneBtn.frame.origin.y * frameForHeight)
             kakaoLinkBtn.frame.origin = CGPoint(x: kakaoLinkBtn.frame.origin.x * frameForWidth, y: kakaoLinkBtn.frame.origin.y * frameForHeight)
-            kakaoStoryBtn.frame.origin = CGPoint(x: kakaoStoryBtn.frame.origin.x * frameForWidth, y: kakaoStoryBtn.frame.origin.y * frameForHeight)
+//            kakaoStoryBtn.frame.origin = CGPoint(x: kakaoStoryBtn.frame.origin.x * frameForWidth, y: kakaoStoryBtn.frame.origin.y * frameForHeight)
             shareBackBtn.frame.origin = CGPoint(x: shareBackBtn.frame.origin.x * frameForWidth, y: shareBackBtn.frame.origin.y * frameForHeight)
             shareBtn.frame.origin = CGPoint(x: shareBtn.frame.origin.x * frameForWidth, y: shareBtn.frame.origin.y * frameForHeight)
             cancelBtn.frame.origin = CGPoint(x: cancelBtn.frame.origin.x * frameForWidth, y: cancelBtn.frame.origin.y * frameForHeight)
@@ -111,7 +115,9 @@ class FavorDetailViewController : UIViewController, UIScrollViewDelegate {
             sKaKaoLinkLabel.frame.origin = CGPoint(x: sKaKaoLinkLabel.frame.origin.x * frameForWidth, y: sKaKaoLinkLabel.frame.origin.y * frameForHeight)
             sTwitterLabel.frame.origin = CGPoint(x: sTwitterLabel.frame.origin.x * frameForWidth, y: sKaKaoLinkLabel.frame.origin.y * frameForHeight)
             sFaceBookLabel.frame.origin = CGPoint(x: sFaceBookLabel.frame.origin.x * frameForWidth, y: sFaceBookLabel.frame.origin.y * frameForHeight)
-            sKakaoStoryLabel.frame.origin = CGPoint(x: sKakaoStoryLabel.frame.origin.x * frameForWidth, y: sKakaoStoryLabel.frame.origin.y * frameForHeight)
+            calendarBtn.frame.origin = CGPoint(x: calendarBtn.frame.origin.x * frameForWidth, y: calendarBtn.frame.origin.y * frameForHeight)
+            sCalendarLabel.frame.origin = CGPoint(x: sCalendarLabel.frame.origin.x * frameForWidth, y: sCalendarLabel.frame.origin.y * frameForHeight)
+ //           sKakaoStoryLabel.frame.origin = CGPoint(x: sKakaoStoryLabel.frame.origin.x * frameForWidth, y: sKakaoStoryLabel.frame.origin.y * frameForHeight)
             
             titleLabel.frame.size = CGSizeMake( titleLabel.frame.width * frameForWidth,  titleLabel.frame.height * frameForHeight)
             nameLabel.frame.size = CGSizeMake( nameLabel.frame.width * frameForWidth,  nameLabel.frame.height * frameForHeight)
@@ -125,7 +131,7 @@ class FavorDetailViewController : UIViewController, UIScrollViewDelegate {
             mapViewLabel.frame.size = CGSizeMake( mapViewLabel.frame.width * frameForWidth,  mapViewLabel.frame.height * frameForHeight)
             phoneBtn.frame.size = CGSizeMake( phoneBtn.frame.width * frameForWidth,  phoneBtn.frame.height * frameForHeight)
             kakaoLinkBtn.frame.size = CGSizeMake( kakaoLinkBtn.frame.width * frameForWidth,  kakaoLinkBtn.frame.height * frameForHeight)
-            kakaoStoryBtn.frame.size = CGSizeMake( kakaoStoryBtn.frame.width * frameForWidth,  kakaoStoryBtn.frame.height * frameForHeight)
+//            kakaoStoryBtn.frame.size = CGSizeMake( kakaoStoryBtn.frame.width * frameForWidth,  kakaoStoryBtn.frame.height * frameForHeight)
             shareBackBtn.frame.size = CGSizeMake( shareBackBtn.frame.width * frameForWidth,  shareBackBtn.frame.height * frameForHeight)
             shareBtn.frame.size = CGSizeMake( shareBtn.frame.width * frameForWidth,  shareBtn.frame.height * frameForHeight)
             cancelBtn.frame.size = CGSizeMake( cancelBtn.frame.width * frameForWidth,  cancelBtn.frame.height * frameForHeight)
@@ -152,7 +158,9 @@ class FavorDetailViewController : UIViewController, UIScrollViewDelegate {
             sKaKaoLinkLabel.frame.size = CGSizeMake( sKaKaoLinkLabel.frame.width * frameForWidth,  sKaKaoLinkLabel.frame.height * frameForHeight)
             sTwitterLabel.frame.size = CGSizeMake( sTwitterLabel.frame.width * frameForWidth,  sKaKaoLinkLabel.frame.height * frameForHeight)
             sFaceBookLabel.frame.size = CGSizeMake( sFaceBookLabel.frame.width * frameForWidth,  sFaceBookLabel.frame.height * frameForHeight)
-            sKakaoStoryLabel.frame.size = CGSizeMake( sKakaoStoryLabel.frame.width * frameForWidth,  sKakaoStoryLabel.frame.height * frameForHeight)
+            calendarBtn.frame.size = CGSizeMake( calendarBtn.frame.width * frameForWidth,  calendarBtn.frame.height * frameForHeight)
+            sCalendarLabel.frame.size = CGSizeMake( sCalendarLabel.frame.width * frameForWidth,  sCalendarLabel.frame.height * frameForHeight)
+//            sKakaoStoryLabel.frame.size = CGSizeMake( sKakaoStoryLabel.frame.width * frameForWidth,  sKakaoStoryLabel.frame.height * frameForHeight)
         }
         
         let stringURL =  "http://52.68.142.137"+(dataDic.valueForKey("thumbnail_file") as? String)!
@@ -180,10 +188,45 @@ class FavorDetailViewController : UIViewController, UIScrollViewDelegate {
         
         makeMapView()
     }
+    func insertEvent(store : EKEventStore){
+        let calendars = store.calendarsForEntityType(EKEntityType.Event) as [EKCalendar]
+        
+        for calendar in calendars {
+            // 2
+            if calendar.title != (dataDic.valueForKey("title") as? String)! {
+                // 3
+                let dateformat = NSDateFormatter()
+                dateformat.dateFormat = "yyyy-MM-dd"
+                dateformat.locale = NSLocale(localeIdentifier: "ko_KR")
+                let sd = dateformat.dateFromString((dataDic.valueForKey("startTime") as? String)!)
+                let ed = dateformat.dateFromString((dataDic.valueForKey("endTime") as? String)!)
+                
+                let startDate = sd
+                // 2 hours
+                let endDate = ed
+                
+                // 4
+                // Create Event
+                let event = EKEvent(eventStore: store)
+                event.calendar = calendar
+                
+                event.title = (dataDic.valueForKey("title") as? String)!
+                event.startDate = startDate!
+                event.endDate = endDate!
+                // 5
+                // Save Event in Calendar
+                do {
+                    try store.saveEvent(event, span: EKSpan.ThisEvent, commit: true)
+                } catch {
+                    print("errrrror")
+                }
+            }
+        }
+    }
     func getFileName(fileName:String) -> String {
         let docsDir = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)
-        let docPath = docsDir[0] as! String
-        let fullName = docPath.stringByAppendingPathComponent(fileName)
+        let docPath = docsDir[0] 
+        let fullName = docPath.stringByAppendingString(fileName)
         return fullName
     }
     func makeMapView() {
@@ -193,11 +236,11 @@ class FavorDetailViewController : UIViewController, UIScrollViewDelegate {
             
             var location = CLLocationCoordinate2D()
             
-            var xNSString = NSString(string: x!)
-            var xToDouble = xNSString.doubleValue
+            let xNSString = NSString(string: x!)
+            let xToDouble = xNSString.doubleValue
             
-            var yNSString = NSString(string: y!)
-            var yToDouble = yNSString.doubleValue
+            let yNSString = NSString(string: y!)
+            let yToDouble = yNSString.doubleValue
             
             location.latitude = xToDouble
             location.longitude = yToDouble
@@ -220,7 +263,7 @@ class FavorDetailViewController : UIViewController, UIScrollViewDelegate {
         favorArray.removeObjectAtIndex(indexPathRow)
         let path = getFileName("myFavorite.plist")
         favorArray.writeToFile(path, atomically: true)
-        var alert = UIAlertView(title: "즐겨찾기", message: "즐겨찾기 메뉴에 제거 되었습니다!", delegate: self, cancelButtonTitle: "확인")
+        let alert = UIAlertView(title: "즐겨찾기", message: "즐겨찾기 메뉴에 제거 되었습니다!", delegate: self, cancelButtonTitle: "확인")
         alert.show()
         cancelBtn.setImage(UIImage(named: "Detail_FavorBtn.png"), forState: UIControlState.Normal)
     }
@@ -241,14 +284,14 @@ class FavorDetailViewController : UIViewController, UIScrollViewDelegate {
         }
     }
     @IBAction func actShare(sender: AnyObject) {
-        UIView.animateWithDuration(0.7, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 0.5, options: nil, animations: {
+        UIView.animateWithDuration(0.7, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 0.5, options: [], animations: {
             self.hiddenView.alpha = CGFloat(0.5)
             self.shareView.transform = CGAffineTransformMakeTranslation(0,-150*self.view.frame.height/667)
             
             }, completion: nil)
     }
     @IBAction func actShareBack(sender: AnyObject) {
-        UIView.animateWithDuration(1.0, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 0.5, options: nil, animations: {
+        UIView.animateWithDuration(1.0, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 0.5, options: [], animations: {
             self.shareView.transform = CGAffineTransformMakeTranslation(0,0)
             self.hiddenView.alpha = CGFloat(0)
             }, completion: nil)
@@ -256,9 +299,10 @@ class FavorDetailViewController : UIViewController, UIScrollViewDelegate {
     @IBAction func actKakaoStory(sender: AnyObject) {
         
     }
+    @available(iOS 8.0, *)
     @IBAction func actTwitter(sender: AnyObject) {
         if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter){
-            var twShare:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+            let twShare:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
             let initText = "[문화 알림 소식]!! \n 제목 : " + titleLabel.text! + "\n 장소" + placeLabel.text! + "\n 시간 :" + startTimeLabel.text! + "~" + endTimeLabel.text!
             twShare.setInitialText(initText)
             if isImage{
@@ -266,7 +310,7 @@ class FavorDetailViewController : UIViewController, UIScrollViewDelegate {
             }
             self.presentViewController(twShare, animated: true, completion: nil)
         } else {
-            var alert = UIAlertController(title: "로그인 오류", message: "트위터에 로그인 후 사용해주세요", preferredStyle: UIAlertControllerStyle.Alert)
+            let alert = UIAlertController(title: "로그인 오류", message: "트위터에 로그인 후 사용해주세요", preferredStyle: UIAlertControllerStyle.Alert)
             
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
             self.presentViewController(alert, animated: true, completion: nil)
@@ -284,12 +328,34 @@ class FavorDetailViewController : UIViewController, UIScrollViewDelegate {
         if KOAppCall.canOpenKakaoTalkAppLink() {
             KOAppCall.openKakaoTalkAppLink([mainLabel])
         } else {
-            println("cannot open kakaotalk.")
+            print("cannot open kakaotalk.")
         }
     }
+    @IBAction func actCalendar(sender: AnyObject) {
+        let eventStore = EKEventStore()
+        
+        switch EKEventStore.authorizationStatusForEntityType(EKEntityType.Event) {
+        case .Authorized:
+            insertEvent(eventStore)
+        case .Denied:
+            print("Access denided")
+        case .NotDetermined:
+            eventStore.requestAccessToEntityType(EKEntityType.Event, completion: {(granted:Bool,error:NSError?) -> Void in
+                if granted {
+                    self.insertEvent(eventStore)
+                }else {
+                    print("Access denied")
+                }
+                
+            })
+        default:
+            print("Case Defailt")
+        }
+    }
+    @available(iOS 8.0, *)
     @IBAction func actFaceBook(sender: AnyObject) {
         if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook){
-            var fbShare:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+            let fbShare:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
             let initText = "[문화 알림 소식]!! \n 제목 : " + titleLabel.text! + "\n 장소" + placeLabel.text! + "\n 시간 :" + startTimeLabel.text! + "~" + endTimeLabel.text!
             fbShare.setInitialText(initText)
             if isImage{
@@ -297,7 +363,7 @@ class FavorDetailViewController : UIViewController, UIScrollViewDelegate {
             }
             self.presentViewController(fbShare, animated: true, completion: nil)
         } else {
-            var alert = UIAlertController(title: "로그인 오류", message: "페이스북에 로그인 후 사용해주세요", preferredStyle: UIAlertControllerStyle.Alert)
+            let alert = UIAlertController(title: "로그인 오류", message: "페이스북에 로그인 후 사용해주세요", preferredStyle: UIAlertControllerStyle.Alert)
             
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
             self.presentViewController(alert, animated: true, completion: nil)
@@ -305,7 +371,7 @@ class FavorDetailViewController : UIViewController, UIScrollViewDelegate {
         
     }
     @IBAction func actPhoneCall(sender: AnyObject) {
-        var alert = UIAlertView(title: "전화걸기", message: "전화 걸어 예약하시겠습니까?", delegate: self, cancelButtonTitle: "취소")
+        let alert = UIAlertView(title: "전화걸기", message: "전화 걸어 예약하시겠습니까?", delegate: self, cancelButtonTitle: "취소")
         alert.addButtonWithTitle("전화걸기")
         alert.show()
     }
@@ -321,13 +387,13 @@ class FavorDetailViewController : UIViewController, UIScrollViewDelegate {
         scrollView.userInteractionEnabled = false
     }
     func scrollViewDidScroll(scrollView: UIScrollView) {
-        var indexPage = scrollView.contentOffset.x / scrollView.frame.width
+        let indexPage = scrollView.contentOffset.x / scrollView.frame.width
         if(indexPage == 0){
-            UIView.animateWithDuration(0.5, delay: 0.00, usingSpringWithDamping: 1.0, initialSpringVelocity: 0, options: nil, animations: {
+            UIView.animateWithDuration(0.5, delay: 0.00, usingSpringWithDamping: 1.0, initialSpringVelocity: 0, options: [], animations: {
                 self.selectImage.transform = CGAffineTransformMakeTranslation(0, 0)
                 }, completion: nil)
         }else{
-            UIView.animateWithDuration(0.5, delay: 0.00, usingSpringWithDamping: 1.0, initialSpringVelocity: 0, options: nil, animations: {
+            UIView.animateWithDuration(0.5, delay: 0.00, usingSpringWithDamping: 1.0, initialSpringVelocity: 0, options: [], animations: {
                 self.selectImage.transform = CGAffineTransformMakeTranslation(self.view.center.x * indexPage, 0)
                 }, completion: nil)
         }
@@ -335,7 +401,7 @@ class FavorDetailViewController : UIViewController, UIScrollViewDelegate {
         scrollView.userInteractionEnabled = true
     }
     func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        var indexPage = scrollView.contentOffset.x / scrollView.frame.width
+        let indexPage = scrollView.contentOffset.x / scrollView.frame.width
         var frame = scrollView.frame;
         frame.origin.x = frame.size.width * indexPage;
         frame.origin.y  = 0;

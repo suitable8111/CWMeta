@@ -34,44 +34,44 @@ class DataModel : NSObject, NSXMLParserDelegate {
         var stringURL : String = ""
         stringURL = "http://52.68.142.137/xml/wordpressXml.php"
         
-        var url = NSURL(string: stringURL)
+        let url = NSURL(string: stringURL)
         
-        parser = NSXMLParser(contentsOfURL: url)!
+        parser = NSXMLParser(contentsOfURL: url!)!
         parser.delegate = self
         parser.parse()
     }
-    func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [NSObject : AnyObject]) {
+    func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {
         element = elementName
         if(elementName as NSString).isEqualToString("row"){
-            elements = NSMutableDictionary.alloc()
+            elements = NSMutableDictionary()
             elements = [:]
-            title = NSMutableString.alloc()
+            title = NSMutableString()
             title = ""
-            content = NSMutableString.alloc()
+            content = NSMutableString()
             content = ""
-            thumbnail = NSMutableString.alloc()
+            thumbnail = NSMutableString()
             thumbnail = ""
-            name = NSMutableString.alloc()
+            name = NSMutableString()
             name = ""
-            tel = NSMutableString.alloc()
+            tel = NSMutableString()
             tel = ""
-            email = NSMutableString.alloc()
+            email = NSMutableString()
             email = ""
-            place = NSMutableString.alloc()
+            place = NSMutableString()
             place = ""
-            category = NSMutableString.alloc()
+            category = NSMutableString()
             category = ""
-            price = NSMutableString.alloc()
+            price = NSMutableString()
             price = ""
-            period = NSMutableString.alloc()
+            period = NSMutableString()
             period = ""
-            startTime = NSMutableString.alloc()
+            startTime = NSMutableString()
             startTime = ""
-            endTime = NSMutableString.alloc()
+            endTime = NSMutableString()
             endTime = ""
-            latitude = NSMutableString.alloc()
+            latitude = NSMutableString()
             latitude = ""
-            longtitude = NSMutableString.alloc()
+            longtitude = NSMutableString()
             longtitude = ""
         }
     }
@@ -124,39 +124,39 @@ class DataModel : NSObject, NSXMLParserDelegate {
         }
         
     }
-    func parser(parser: NSXMLParser, foundCharacters string: String?) {
+    func parser(parser: NSXMLParser, foundCharacters string: String) {
         if element.isEqualToString("title"){
-            title.appendString(replaceSpecialChar(string!))
+            title.appendString(replaceSpecialChar(string))
         }else if element.isEqualToString("content"){
-            content.appendString(replaceSpecialChar(string!))
+            content.appendString(replaceSpecialChar(string))
         }else if element.isEqualToString("thumbnail_file"){
-            thumbnail.appendString(replaceSpecialChar(string!))
+            thumbnail.appendString(replaceSpecialChar(string))
         }else if element.isEqualToString("name"){
-            name.appendString(replaceSpecialChar(string!))
+            name.appendString(replaceSpecialChar(string))
         }else if element.isEqualToString("tel"){
-            tel.appendString(replaceSpecialChar(string!))
+            tel.appendString(replaceSpecialChar(string))
         }else if element.isEqualToString("email"){
-            email.appendString(replaceSpecialChar(string!))
+            email.appendString(replaceSpecialChar(string))
         }else if element.isEqualToString("place"){
-            place.appendString(replaceSpecialChar(string!))
+            place.appendString(replaceSpecialChar(string))
         }else if element.isEqualToString("category"){
-            category.appendString(replaceSpecialChar(string!))
+            category.appendString(replaceSpecialChar(string))
         }else if element.isEqualToString("price"){
-            price.appendString(replaceSpecialChar(string!))
+            price.appendString(replaceSpecialChar(string))
         }else if element.isEqualToString("period"){
-            period.appendString(replaceSpecialChar(string!))
+            period.appendString(replaceSpecialChar(string))
         }else if element.isEqualToString("startTime"){
-            startTime.appendString(replaceSpecialChar(string!))
+            startTime.appendString(replaceSpecialChar(string))
         }else if element.isEqualToString("endTime"){
-            endTime.appendString(replaceSpecialChar(string!))
+            endTime.appendString(replaceSpecialChar(string))
         }else if element.isEqualToString("longtitude"){
-            longtitude.appendString(replaceSpecialChar(string!))
+            longtitude.appendString(replaceSpecialChar(string))
         }else if element.isEqualToString("latitude"){
-            latitude.appendString(replaceSpecialChar(string!))
+            latitude.appendString(replaceSpecialChar(string))
         }
     }
     func replaceSpecialChar(str:String) -> String{
-        var str_change = NSMutableString(string: str)
+        let str_change = NSMutableString(string: str)
         
         str_change.replaceOccurrencesOfString("\n", withString: "", options: NSStringCompareOptions.LiteralSearch, range: NSMakeRange(0, str_change.length))
         str_change.replaceOccurrencesOfString("\t", withString: "", options: NSStringCompareOptions.LiteralSearch, range: NSMakeRange(0, str_change.length))

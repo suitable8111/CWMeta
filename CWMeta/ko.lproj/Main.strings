@@ -1,0 +1,183 @@
+
+/* Class = "UILabel"; text = "내용"; ObjectID = "290-yA-liZ"; */
+"290-yA-liZ.text" = "내용";
+
+/* Class = "UIButton"; normalTitle = "<"; ObjectID = "2jx-8p-Byi"; */
+"2jx-8p-Byi.normalTitle" = "<";
+
+/* Class = "UILabel"; text = "페이스북"; ObjectID = "3Vi-0I-BsD"; */
+"3Vi-0I-BsD.text" = "페이스북";
+
+/* Class = "UILabel"; text = "요금"; ObjectID = "3gn-Ju-NK5"; */
+"3gn-Ju-NK5.text" = "요금";
+
+/* Class = "UILabel"; text = "카카오톡"; ObjectID = "4Yn-5N-EVd"; */
+"4Yn-5N-EVd.text" = "카카오톡";
+
+/* Class = "UILabel"; text = "전화하기"; ObjectID = "5iH-1T-0dN"; */
+"5iH-1T-0dN.text" = "전화하기";
+
+/* Class = "UIButton"; normalTitle = "<"; ObjectID = "6Nj-jY-iRh"; */
+"6Nj-jY-iRh.normalTitle" = "<";
+
+/* Class = "UILabel"; text = "시간"; ObjectID = "7XL-fm-qJb"; */
+"7XL-fm-qJb.text" = "시간";
+
+/* Class = "UILabel"; text = "지도"; ObjectID = "7uF-nl-ONV"; */
+"7uF-nl-ONV.text" = "지도";
+
+/* Class = "UILabel"; text = "주최"; ObjectID = "DI4-7O-GJl"; */
+"DI4-7O-GJl.text" = "주최";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "DxB-e7-RL3"; */
+"DxB-e7-RL3.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "트위터"; ObjectID = "F6s-k2-xzV"; */
+"F6s-k2-xzV.text" = "트위터";
+
+/* Class = "UILabel"; text = "즐겨찾기"; ObjectID = "GHt-nY-T5y"; */
+"GHt-nY-T5y.text" = "즐겨찾기";
+
+/* Class = "UILabel"; text = "제목"; ObjectID = "GYE-2Y-0vQ"; */
+"GYE-2Y-0vQ.text" = "제목";
+
+/* Class = "UIButton"; normalTitle = "<"; ObjectID = "HTW-Xy-hdE"; */
+"HTW-Xy-hdE.normalTitle" = "<";
+
+/* Class = "UIButton"; normalTitle = "<"; ObjectID = "IFx-O2-v4t"; */
+"IFx-O2-v4t.normalTitle" = "<";
+
+/* Class = "UILabel"; text = "요금"; ObjectID = "KBC-KZ-sE4"; */
+"KBC-KZ-sE4.text" = "요금";
+
+/* Class = "UILabel"; text = "시간"; ObjectID = "M8A-qX-LV9"; */
+"M8A-qX-LV9.text" = "시간";
+
+/* Class = "UILabel"; text = "시간"; ObjectID = "Nrc-97-DK2"; */
+"Nrc-97-DK2.text" = "시간";
+
+/* Class = "UILabel"; text = "종류"; ObjectID = "Nz0-Lx-AqD"; */
+"Nz0-Lx-AqD.text" = "종류";
+
+/* Class = "UIButton"; normalTitle = "<"; ObjectID = "P4j-pd-oQU"; */
+"P4j-pd-oQU.normalTitle" = "<";
+
+/* Class = "UIButton"; normalTitle = "<"; ObjectID = "PCl-wJ-CfI"; */
+"PCl-wJ-CfI.normalTitle" = "<";
+
+/* Class = "UILabel"; text = "트위터"; ObjectID = "PeV-6Z-QWN"; */
+"PeV-6Z-QWN.text" = "트위터";
+
+/* Class = "UILabel"; text = "내용"; ObjectID = "RfT-ch-kTR"; */
+"RfT-ch-kTR.text" = "내용";
+
+/* Class = "UILabel"; text = "지도"; ObjectID = "TDR-dV-dka"; */
+"TDR-dV-dka.text" = "지도";
+
+/* Class = "UITextView"; text = "dd"; ObjectID = "TZs-TP-rF6"; */
+"TZs-TP-rF6.text" = "dd";
+
+/* Class = "UILabel"; text = "~"; ObjectID = "Tqi-hr-GJ4"; */
+"Tqi-hr-GJ4.text" = "~";
+
+/* Class = "UILabel"; text = "~"; ObjectID = "UtK-wV-I0m"; */
+"UtK-wV-I0m.text" = "~";
+
+/* Class = "UILabel"; text = "주최"; ObjectID = "Wf1-s7-j3y"; */
+"Wf1-s7-j3y.text" = "주최";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Wmh-TL-qux"; */
+"Wmh-TL-qux.text" = "Label";
+
+/* Class = "UILabel"; text = "주최"; ObjectID = "Wmm-j8-w8V"; */
+"Wmm-j8-w8V.text" = "주최";
+
+/* Class = "UIButton"; normalTitle = "<"; ObjectID = "Wqh-9G-sh3"; */
+"Wqh-9G-sh3.normalTitle" = "<";
+
+/* Class = "UILabel"; text = "주최"; ObjectID = "ZgR-Y3-oOI"; */
+"ZgR-Y3-oOI.text" = "주최";
+
+/* Class = "UILabel"; text = "전화하기"; ObjectID = "Zl1-ng-S88"; */
+"Zl1-ng-S88.text" = "전화하기";
+
+/* Class = "UILabel"; text = "시간"; ObjectID = "a0M-mr-w6H"; */
+"a0M-mr-w6H.text" = "시간";
+
+/* Class = "UILabel"; text = "설명"; ObjectID = "acR-km-45U"; */
+"acR-km-45U.text" = "설명";
+
+/* Class = "UITextView"; text = "ㄴㄴ"; ObjectID = "bb7-B0-Lf5"; */
+"bb7-B0-Lf5.text" = "ㄴㄴ";
+
+/* Class = "UISegmentedControl"; bxZ-NG-dQo.segmentTitles[0] = "지도"; ObjectID = "bxZ-NG-dQo"; */
+"bxZ-NG-dQo.segmentTitles[0]" = "지도";
+
+/* Class = "UISegmentedControl"; bxZ-NG-dQo.segmentTitles[1] = "위성"; ObjectID = "bxZ-NG-dQo"; */
+"bxZ-NG-dQo.segmentTitles[1]" = "위성";
+
+/* Class = "UISegmentedControl"; bxZ-NG-dQo.segmentTitles[2] = "지도+위성"; ObjectID = "bxZ-NG-dQo"; */
+"bxZ-NG-dQo.segmentTitles[2]" = "지도+위성";
+
+/* Class = "UILabel"; text = "장소"; ObjectID = "c5D-qZ-ZJg"; */
+"c5D-qZ-ZJg.text" = "장소";
+
+/* Class = "UILabel"; text = "페이스북"; ObjectID = "cg6-tP-eew"; */
+"cg6-tP-eew.text" = "페이스북";
+
+/* Class = "UILabel"; text = "시간"; ObjectID = "gZF-Tl-B0E"; */
+"gZF-Tl-B0E.text" = "시간";
+
+/* Class = "UILabel"; text = "설명"; ObjectID = "gt8-gE-wJ5"; */
+"gt8-gE-wJ5.text" = "설명";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "hTh-ng-T0i"; */
+"hTh-ng-T0i.text" = "Label";
+
+/* Class = "UILabel"; text = "제목"; ObjectID = "ja1-61-3Qb"; */
+"ja1-61-3Qb.text" = "제목";
+
+/* Class = "UILabel"; text = "장소"; ObjectID = "knx-KW-mt8"; */
+"knx-KW-mt8.text" = "장소";
+
+/* Class = "UISegmentedControl"; mfk-Ar-Sak.segmentTitles[0] = "지도"; ObjectID = "mfk-Ar-Sak"; */
+"mfk-Ar-Sak.segmentTitles[0]" = "지도";
+
+/* Class = "UISegmentedControl"; mfk-Ar-Sak.segmentTitles[1] = "위성"; ObjectID = "mfk-Ar-Sak"; */
+"mfk-Ar-Sak.segmentTitles[1]" = "위성";
+
+/* Class = "UISegmentedControl"; mfk-Ar-Sak.segmentTitles[2] = "지도+위성"; ObjectID = "mfk-Ar-Sak"; */
+"mfk-Ar-Sak.segmentTitles[2]" = "지도+위성";
+
+/* Class = "UILabel"; text = "요금"; ObjectID = "oyZ-EH-xhU"; */
+"oyZ-EH-xhU.text" = "요금";
+
+/* Class = "UILabel"; text = "장소"; ObjectID = "qPR-KQ-1zX"; */
+"qPR-KQ-1zX.text" = "장소";
+
+/* Class = "UILabel"; text = "카카오톡"; ObjectID = "qSy-2O-HQL"; */
+"qSy-2O-HQL.text" = "카카오톡";
+
+/* Class = "UILabel"; text = "즐겨찾기 취소"; ObjectID = "r6m-nh-fYE"; */
+"r6m-nh-fYE.text" = "즐겨찾기 취소";
+
+/* Class = "UILabel"; text = "공유하기"; ObjectID = "rCM-yJ-81S"; */
+"rCM-yJ-81S.text" = "공유하기";
+
+/* Class = "UILabel"; text = "즐겨찾기"; ObjectID = "sDa-h1-vfg"; */
+"sDa-h1-vfg.text" = "즐겨찾기";
+
+/* Class = "UILabel"; text = "장소"; ObjectID = "sVr-cS-Bck"; */
+"sVr-cS-Bck.text" = "장소";
+
+/* Class = "UILabel"; text = "요금"; ObjectID = "srk-1Z-L0U"; */
+"srk-1Z-L0U.text" = "요금";
+
+/* Class = "UILabel"; text = "공유하기"; ObjectID = "tSh-Md-cfI"; */
+"tSh-Md-cfI.text" = "공유하기";
+
+/* Class = "UILabel"; text = "시간"; ObjectID = "wNY-vk-VL9"; */
+"wNY-vk-VL9.text" = "시간";
+
+/* Class = "UIViewController"; title = "ViewController"; ObjectID = "xcn-dJ-h4c"; */
+"xcn-dJ-h4c.title" = "ViewController";
